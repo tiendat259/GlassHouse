@@ -27,7 +27,7 @@ body {
     left: 0px;
     right: 0px;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
     display: inline-block;
 }
 
@@ -129,18 +129,10 @@ body {
 #nav .subnav .child-subnav {
     position: absolute;
     left: 300px;
-    top: 10px;
+    top: 0px;
     list-style: none;
     transition: all 0.2 ease-in-out;
 }
-
-
-/* .button {
-    background-color: #08c;
-    border-color: #08c #08c #069;
-    color: #fff;
-    background-image: linear-gradient(150deg, #0088cc 0%, #0088cc 30%, #0169fe 70%, #0169fe 100%);
-} */
 
 #nav .subnav .child-subnav li a {
     width: 300px;
@@ -267,11 +259,12 @@ a:hover {
 }
 
 #product .product-info>a {
-    color: #000;
-    border: 1px solid #ccc;
+    font-size: 14px;
+    background: linear-gradient(77deg, #08ddfe, #0172ef);
+    color: #fff;
     line-height: 17px;
     margin: 0px;
-    padding: 12px 35px;
+    padding: 10px 20px;
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 13px;
@@ -280,16 +273,78 @@ a:hover {
 }
 
 #product .container .row .columns:hover span {
-    color: orange;
+    color: #0183F1;
 }
 
 #product .product-content h4 {
     padding-top: 10px;
 }
 
+.about-us {
+    width: 1860px;
+    height: 525px;
+    background-color: #e0ded8;
+}
+
+.title-about {
+    font-weight: 700;
+    line-height: 43px;
+    font-size: 44px;
+    margin: 160px 0 0;
+}
+
+.content-about {
+    font-size: 16px;
+    margin: 30px 4px 0 0;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.col-md-6 .button {
+    font-size: 14px;
+    background: linear-gradient(77deg, #08ddfe, #0172ef);
+    color: #fff;
+    line-height: 17px;
+    margin: 0px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.col-md-6 .button:hover {
+    text-decoration: none;
+}
+
+.col-md-4 {
+    display: inline-block;
+}
+
+.col-md-4 img {
+    width: 378px;
+    height: 378px;
+    margin: 75px 0px 0 80px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    float: left;
+    border-radius: 50%;
+}
+
+.col-md-4 .block-color {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-color: #0183F1;
+    margin: 40px 0px 0 180px;
+    border-radius: 50%;
+}
+
 #project {
     height: 700px;
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 .title {
@@ -430,6 +485,11 @@ a:hover {
     z-index: 5;
 }
 
+.news-card__read-more:hover {
+    text-decoration: none;
+    color: #0183F1;
+}
+
 .news-card__read-more i {
     position: relative;
     left: 0.2rem;
@@ -479,74 +539,107 @@ a:hover {
 .review-content i {
     text-align: center;
     margin-left: 50%;
-    color: #fff;
+    color: #000;
     margin-top: 3%;
     margin-bottom: 2%;
 }
 
 .review-content h3 {
     font-size: 15px;
-    color: #fff;
+    color: #000;
     line-height: 10px;
     text-align: center;
-    font-family: 'Libre Baskerville';
+    font-family: 'Archivo Narrow';
 }
 
 .review-content p {
-    line-height: 45px;
-    color: #fff;
+    line-height: 40px;
+    color: #000;
     text-align: center;
-    font-family: 'Libre Baskerville';
-    font-size: 20px;
+    font-family: 'Archivo Narrow';
+    font-size: 26px;
     width: 70%;
     margin-left: 15%;
     margin-bottom: 2%;
 }
 
 #footer {
-    background: #f8f8f8;
-    color: #fff;
+    background: linear-gradient(77deg, #08ddfe, #0172ef);
+    height: 300px;
 }
 
-#footer a,
-li,
-p {
+#footer h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-col-3 li>a,
+.footer-col-4 li>a {
+    text-transform: uppercase;
+    font-weight: 500;
     font-size: 16px;
     color: #000;
 }
 
-.footer-col-1,
-.footer-col-2,
-.footer-col-3,
+.footer-col-2 li,
+.footer-col-2 li>a {
+    font-size: 16px;
+    color: #000;
+}
+
+.footer-col-1 img {
+    margin-top: 90px;
+}
+
 .footer-col-4 {
-    min-width: 250px;
+    width: 500px;
+}
+
+.footer-col-2,
+.footer-col-3 {
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+}
+
+.footer-col-4 h4 {
+    margin-top: 40px;
+}
+
+.footer-col-2 h4,
+.footer-col-3 h4 {
     margin-top: 30px;
 }
 
-.footer-col-2 ul {
+.footer-col-4 ul {
     list-style: none;
-    padding-top: 40px;
-    padding-left: 65px;
+    margin-top: 5px;
+}
+
+.footer-col-2 ul,
+.footer-col-3 ul,
+.footer-col-4 ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 32px;
     line-height: 25px;
 }
 
 .footer-col-3 ul {
-    list-style: none;
-    padding-top: 40px;
-    padding-left: 75px;
     line-height: 30px;
 }
 
 .footer-col-1 img {
-    width: 160px;
+    width: 200px;
     margin-bottom: 20px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .footer-col-1 p {
-    margin-left: -10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .footer-col-1 {
@@ -554,9 +647,11 @@ p {
 }
 
 .footer-col-2 h4,
-.footer-col-3 h4 {
-    font-size: 24px;
+.footer-col-3 h4,
+.footer-col-4 h4 {
+    font-size: 16px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .footer-col-3,
@@ -585,16 +680,16 @@ li::marker {
     width: 50px;
     height: 50px;
     background-color: none;
-    color: #000;
+    color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 20px;
     cursor: pointer;
-    border: 2px solid #000;
+    border: 2px solid red;
 }
 
 #btn-contact {
@@ -612,20 +707,25 @@ li::marker {
     align-items: center;
     margin: 1px 0;
     height: 40px;
-    width: 150px;
+    width: 130px;
     color: #ffffff;
     background: var(--color-accent);
     transition: 0.2s;
-    border: 1px solid #000;
+    border: 2px solid red;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fff;
 }
 
 #btn-contact span {
-    color: #000;
+    color: red;
 }
 
 #btn-contact a:hover {
-    transform: translateX(-73%);
+    transform: translateX(-55%);
     text-decoration: none;
+    text-align: center;
 }
 
 #btn-contact img {
