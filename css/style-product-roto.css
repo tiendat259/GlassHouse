@@ -322,103 +322,66 @@
   }
   
   #footer {
-      background: linear-gradient(77deg, #08ddfe, #0172ef);
+      background-image: url('../img-glass-house/img-product/footer.jpg');
       height: 300px;
   }
   
   #footer h4 {
+      font-weight: bold;
       font-size: 18px;
-      color: #fff;
+      color: #000;
   }
   
-  #footer a,
-  li,
-  p {
+  .footer-col-2 li,
+  .footer-col-2 li>a {
       font-size: 16px;
       color: #000;
   }
   
-  .footer-col-1 img {
-      margin-top: -180px;
-  }
-  
-  .footer-col-4 {
-      width: 500px;
-  }
-  
-  .footer-col-2,
-  .footer-col-3 {
+  .footer-col-2 {
       width: 250px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 10px;
   }
   
-  .footer-col-4 h4 {
-      margin-top: -100px;
-  }
-  
   .footer-col-2 h4 {
-      margin-top: -30px;
+      margin-top: 30px;
   }
   
-  .footer-col-4 ul {
-      list-style: none;
-      margin-top: 5px;
-  }
-  
-  .footer-col-2 ul,
-  .footer-col-3 ul,
-  .footer-col-4 ul {
+  .footer-col-2 ul {
       list-style: none;
       padding-top: 10px;
-      padding-left: 45px;
+      padding-left: 32px;
       line-height: 25px;
   }
   
-  .footer-col-3 ul {
-      line-height: 30px;
-  }
-  
   .footer-col-1 img {
-      width: 200px;
-      margin-bottom: 20px;
-      margin-left: 20px;
+      width: 350px;
+      margin-bottom: 10px;
+      margin-left: -80px;
   }
   
   .footer-col-1 p {
-      font-weight: bold;
       text-align: center;
+      font-size: 18px;
+      color: #ccc;
+      font-style: italic;
+      margin-left: -80px;
   }
   
   .footer-col-1 {
       width: 250px;
   }
   
-  .footer-col-2 h4,
-  .footer-col-3 h4,
-  .footer-col-4 h4 {
+  .footer-col-2 h4 {
       font-size: 16px;
       text-align: center;
       text-transform: uppercase;
   }
   
-  .footer-col-3,
-  .footer-col-4 {
-      flex-basis: 12%;
-  }
-  
   li::marker {
       color: black;
-  }
-  
-  .copyright {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      line-height: 30px;
-      color: #000;
-      display: inline-block;
   }
   
   .footer i {
