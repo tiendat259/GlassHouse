@@ -100,24 +100,30 @@
                         <table class="table">
                             <tr>
                                 <td>Loại nhôm</td>
-                                <td>Roto</td>
+                                <td>
+                                    <p for="" id="type"></p>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Màu sắc</td>
-                                <td>Ghi</td>
+                                <td><label for="" id="color"></label></td>
                             </tr>
                             <tr>
                                 <td>Kích thước (m2)</td>
-                                <td>20</td>
+                                <td><label for="" id="size"></label></td>
                             </tr>
                             <tr>
                                 <td>Phụ kiện</td>
-                                <td>Bản lề</td>
+                                <td><label for="" id="access"></label></td>
+                            </tr>
+                            <tr>
+                                <td>Kính</td>
+                                <td> <label for="" id="glass"></label></td>
                             </tr>
                             <tfoot>
                                 <tr>
-                                    <td>Kính</td>
-                                    <td>Kính hộp</td>
+                                    <td>Báo giá</td>
+                                    <td><label for="baogia" id="tongtien"></label></td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -135,7 +141,7 @@
                             <input type="text" name="txtAdd" id="txtAdd" onblur="checkAdd()" placeholder="Địa chỉ công trình">
                             <p id="errAdd"></p>
                             <br><br>
-                            <input class="btn" type="submit" value="Xác Nhận" style="cursor: pointer;">
+                            <input class="btn" type="submit" value="Xác Nhận" style="cursor: pointer;" onclick="checkinfo()">
                         </form>
                     </div>
 

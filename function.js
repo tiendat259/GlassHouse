@@ -98,3 +98,23 @@ function checkMessage() {
         document.getElementById('errMessage').innerHTML = '(*) Vui lòng nhập nội dung!';
     }
 }
+
+function checkinfo() {
+    var name = document.getElementById('txtName').value;
+    var phonenum = document.getElementById('txtPhone').value;
+    var add = document.getElementById('txtAdd').value;
+    var lenght = document.getElementById('txtlenght').value;
+    var width = document.getElementById('txtwidth').value;
+    if (name == "" && phonenum == "" && add == "") {
+        window.alert("Vui lòng nhập đầy đủ thông tin để nhận báo giá chi tiết!")
+    } else {
+        var result = lenght * width;
+        document.getElementById("tongtien").innerHTML = result;
+    }
+}
+
+
+function datatransfer() {
+    var a = document.getElementById("select-alu").value;
+    document.getElementById("type").innerHTML = a;
+}
