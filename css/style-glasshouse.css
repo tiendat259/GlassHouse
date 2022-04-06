@@ -184,6 +184,7 @@ a:hover {
 }
 
 .slider-content h3 {
+    font-size: 20px;
     font-weight: 900;
     font-size: 15px;
     color: #265FB4;
@@ -1101,5 +1102,75 @@ li::marker {
     }
     .footer-col-2 {
         width: 50%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #header img {
+        margin-left: 12%;
+        width: 130px;
+    }
+    #header {
+        padding: 0;
+    }
+    #header>.mobile-menu>img {
+        margin-left: 3%;
+    }
+    #slider>.carousel-inner>.carousel-item>.slider-content h3 {
+        font-size: 13px;
+    }
+    .slider-content h5 {
+        font-size: 16px;
+    }
+    .slider-content a {
+        font-size: 9px;
+    }
+    .top-banner>.container>.row>.col-md-3 {
+        width: 100%;
+        margin: 0 10px;
+    }
+    .img-banner {
+        margin: 10px 0 0 5px;
+        width: 60px;
+        height: 60px;
+    }
+    .img-banner img {
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+    }
+    .title-banner {
+        font-size: 11px;
+    }
+    .content-banner {
+        font-size: 11px;
+    }
+    .col-md-3>.text {
+        width: 300px;
+        margin: 15px 0 0 70px;
+    }
+    .product-info h3::before {
+        width: 32%;
+        content: '';
+        height: 2px;
+        background: #000;
+        content: '';
+        top: 15px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+    }
+    .product-info h3::after {
+        width: 32%;
+        content: '';
+        height: 2px;
+        background: #000;
+        content: '';
+        top: 15px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        right: 0%;
     }
 }
