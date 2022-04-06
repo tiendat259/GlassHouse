@@ -1196,6 +1196,8 @@ li::marker {
         height: 400px;
     }
     .title-about {
+        font-size: 36px;
+        text-align: center;
         margin: 30px auto;
     }
 }
