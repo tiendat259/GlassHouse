@@ -1131,6 +1131,9 @@ li::marker {
         width: 100%;
         margin-left: 0px;
     }
+    #product .container .row .columns {
+        width: 100%;
+    }
     .product-info h3::before {
         width: 15%;
         content: '';
@@ -1160,7 +1163,7 @@ li::marker {
         padding: 10px 20px;
     }
     #product .product-img img {
-        width: 250px;
+        width: 100%;
     }
     .col-md-4 img {
         display: none;
