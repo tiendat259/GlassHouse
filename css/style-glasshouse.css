@@ -195,18 +195,15 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.slider-content a {
-    background-color: #0183F1;
+.button {
+    background: #0183F1;
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    line-height: 17px;
-    margin: 0px;
-    padding: 12px 35px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 30px;
     border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .slider-content a:hover {
@@ -352,19 +349,7 @@ a:hover {
 #product .product-img img {
     width: 300px;
     height: 180px;
-}
-
-#product .product-info>a {
-    font-size: 14px;
-    background: linear-gradient(77deg, #08ddfe, #0172ef);
-    color: #fff;
-    line-height: 17px;
-    margin: 0px;
-    padding: 10px 20px;
-    letter-spacing: 2px;
-    font-size: 13px;
-    text-transform: uppercase;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #product .container .row .columns:hover span {
@@ -393,20 +378,6 @@ a:hover {
     margin: 30px 4px 0 0;
     text-align: justify;
     margin-bottom: 30px;
-}
-
-.col-md-6 .button {
-    font-size: 14px;
-    background: linear-gradient(77deg, #08ddfe, #0172ef);
-    color: #fff;
-    line-height: 17px;
-    margin: 0px;
-    padding: 10px 20px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 13px;
-    text-transform: uppercase;
-    border-radius: 30px;
 }
 
 .col-md-6 .button:hover {
@@ -657,6 +628,11 @@ a:hover {
     margin: 0 50px;
 }
 
+#slider-review {
+    background: url('../img-glass-house/banner_4.png');
+    background-size: cover;
+}
+
 .review-content {
     opacity: 1;
     position: absolute;
@@ -695,7 +671,7 @@ a:hover {
 }
 
 #footer {
-    background-image: url('../img-glass-house/img-product/footer.jpg');
+    background-image: url('../img-glass-house/banner_3.png');
     height: 300px;
 }
 
@@ -1199,6 +1175,61 @@ li::marker {
         font-size: 36px;
         text-align: center;
         margin: 30px auto;
+    }
+    #slider-review {
+        display: none;
+    }
+    #partner>.partner-logo {
+        margin-left: 0;
+    }
+    #partner>.partner-logo>img {
+        width: 40px;
+        margin: 0 10px
+    }
+    #footer {
+        margin-top: 100px;
+    }
+    .footer-col-1 img {
+        width: 150px;
+        margin: -130px 0 0 150px;
+    }
+    .footer-col-1 p {
+        font-size: 13px;
+        width: 100%;
+        margin: -50px 0 0 150px;
+    }
+    .footer-col-2 h4 {
+        display: none;
+    }
+    .footer-col-2 ul {
+        display: inline-block;
+        padding: 0;
+    }
+    .footer-col-2 li {
+        display: none;
+    }
+    .footer-col-2 li,
+    .footer-col-2 li>a {
+        font-size: 13px;
+    }
+    .coccoc-alo-ph-img-circle {
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+        top: 100px;
+        left: 120px;
+    }
+    .coccoc-alo-ph-circle-fill {
+        top: 75px;
+        left: 95px;
+        width: 90px;
+        height: 90px;
+    }
+    .coccoc-alo-ph-circle {
+        width: 100px;
+        height: 100px;
+        top: 70px;
+        left: 90px;
     }
 }
 
