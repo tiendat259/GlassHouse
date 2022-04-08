@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 
 <body>
@@ -68,27 +69,28 @@
             <li>
                 <a href="#" style="border: #000 solid 1px; line-height: 30px; border-radius: 30px;">Giỏ Hàng <i class="fa fa-shopping-cart " style="font-size: 16px;"></i></a></li>
         </ul>
-    </div>
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="../html/index.html">Trang chủ</a></li>
+                    <li><a href="../html/introduce.html">Giới thiệu</a></li>
+                    <li><a href="../html/service.html">Dịch vụ</a></li>
+                    <li><a href="../html/product.html">Sản phẩm</a></li>
+                    <li><a href="../html/project.html">Công trình</a></li>
+                    <li><a href="../html/news.html">tin tức</a></li>
+                    <li><a href="../html/news.html">liên hệ</a></li>
+                    <li><a href="../html/news.html">tuyển dụng</a></li>
+                </ul>
             </div>
-            <ul class="menu-items">
-                <li><a href="../html/index.html">Trang chủ</a></li>
-                <li><a href="../html/introduce.html">Giới thiệu</a></li>
-                <li><a href="../html/service.html">Dịch vụ</a></li>
-                <li><a href="../html/product.html">Sản phẩm</a></li>
-                <li><a href="../html/project.html">Công trình</a></li>
-                <li><a href="../html/news.html">tin tức</a></li>
-                <li><a href="../html/news.html">liên hệ</a></li>
-                <li><a href="../html/news.html">tuyển dụng</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
+
     <!-- banner -->
     <div id="slider" class="carousel slide" data-ride="carousel">
         <!-- The slideshow -->
@@ -122,7 +124,7 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
-    <div class="top-banner">
+    <!-- <div class="top-banner">
         <h4>Tại sao nên chọn GlassHouse</h4>
         <div class="container">
             <div class="row">
@@ -178,7 +180,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="product">
         <div class="container">
             <div class="row">
@@ -274,10 +276,11 @@
                     <p class="content-about" style="color: #000; font-size: 16px"> Được thành lập năm 2009, hoạt động trong lĩnh vực sản xuất, hoàn thiện cửa vách nhôm kính thương hiệu Đức. Với đam mê và đội ngũ nhân viên năng động, nhiều chuyên môn, <a href=""> Glasshouse </a>đã khẳng định được chất lượng dòng sản
                         phẩm tinh tế, sắc nét trên phân khúc cao cấp. Hiện nay, Chúng tôi là đối tác chiến lược của Roto Frank tại khu vực Đông Nam Á.</p>
                     <a href="" class="button">Xem thêm </a>
+
                 </div>
                 <div class="col-md-4">
-                    <img src="../img-glass-house/img-product/img-project-1.jpg" alt="">
-                    <div class="block-color"></div>
+                    <img src="../img-glass-house/img-product/img-project-1.jpg" alt="" style="border: 10px solid #0183F1;">
+                    <div class="block-color">Tư vấn nhiệt tình</div>
                 </div>
             </div>
         </div>
@@ -466,23 +469,6 @@
     </div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop()) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        $("#back-to-top").click(function() {
-            $('html,body').animate({
-                scrollTop: 0
-            }, 1000);
-        });
-    });
-</script>
 <script>
     var $cont = document.querySelector('.cont');
     var $elsArr = [].slice.call(document.querySelectorAll('.el'));
