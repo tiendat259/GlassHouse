@@ -205,6 +205,7 @@
     .col-4 img {
         width: 237.5px;
         height: 237.5px;
+        cursor: pointer;
     }
     
     .col-4>ul>li>a {
@@ -334,6 +335,38 @@
         color: #fff;
     }
     
+    .popup-img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    
+    .popup-img img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #fff;
+        width: 750px;
+        object-fit: cover;
+    }
+    
+    .popup-img span {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
     #loadMore {
         width: 200px;
         color: #fff;
@@ -443,4 +476,10 @@
         bottom: 50px;
         right: 20px;
         cursor: pointer;
+    }
+    
+    @media (max-width:768px) {
+        .popup-img img {
+            width: 95%;
+        }
     }
