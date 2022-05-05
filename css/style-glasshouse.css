@@ -171,6 +171,7 @@
         border: #000 solid 1px;
         line-height: 30px;
         border-radius: 30px;
+        position: relative;
     }
     
     a,
@@ -394,9 +395,8 @@
     
     .content-about {
         font-size: 16px;
-        margin: 30px 4px 0 0;
+        margin: 10px 4px 0 0;
         text-align: justify;
-        margin-bottom: 30px;
     }
     
     .col-md-6 .button:hover {
@@ -510,7 +510,7 @@
     .news-card {
         border: 0px solid aqua;
         margin: 0.5rem;
-        height: 12rem;
+        height: 20rem;
         overflow: hidden;
         border-radius: 0.5rem;
         flex: 1;
@@ -688,7 +688,7 @@
     }
     
     #slider-review {
-        background: url('../img-glass-house/banner_4.png');
+        background-color: #f5f5f5;
         background-size: cover;
     }
     
@@ -740,10 +740,20 @@
         color: #000;
     }
     
+    #footer>.container>.row {
+        margin: 0;
+    }
+    
+    #footer>.container>.row>.footer-col-1 {
+        width: 50%;
+    }
+    
     .footer-col-1 img {
-        width: 350px;
+        width: 300px;
         margin-bottom: 10px;
-        margin-left: 23%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .footer-col-1 p {
@@ -755,8 +765,6 @@
     
     .footer-col-1 {
         margin-top: 100px;
-        width: 250px;
-        margin-left: -54px;
     }
     
     .footer-col-2 li,
@@ -766,7 +774,8 @@
     }
     
     .footer-col-2 {
-        margin-left: 85px;
+        display: block;
+        margin-left: auto;
         margin-right: auto;
         margin-top: 37px;
     }
@@ -778,7 +787,6 @@
     .footer-col-2 ul {
         list-style: none;
         padding-top: 10px;
-        padding-left: 32px;
         line-height: 25px;
     }
     
@@ -796,14 +804,21 @@
         color: #000;
     }
     
+    .copyright {
+        width: 100%;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #000;
+    }
+    
     .ring {
         position: fixed;
         right: 50px;
         bottom: 10px;
-    }
-    
-    .info-footer-mobile {
-        display: none;
     }
     
     .coccoc-alo-ph-circle {
@@ -1202,7 +1217,6 @@
         }
         .slider-content a {
             font-size: 11px;
-            padding: 10px 20px;
         }
         .container>.row>.large-6 {
             width: 100%;
@@ -1225,7 +1239,7 @@
             width: 100%;
         }
         .product-info h3::before {
-            width: 20%;
+            width: 15%;
             content: '';
             height: 2px;
             background: #000;
@@ -1237,7 +1251,7 @@
             left: 0%;
         }
         .product-info h3::after {
-            width: 20%;
+            width: 15%;
             content: '';
             height: 2px;
             background: #000;
@@ -1251,10 +1265,12 @@
         #product .product-info>a {
             left: 50%;
             font-size: 11px;
-            padding: 10px 30px;
         }
         #product .product-img img {
             width: 100%;
+        }
+        .button {
+            font-size: 13px;
         }
         .col-md-4 img {
             width: 248px;
@@ -1282,8 +1298,9 @@
         }
         .title-about {
             font-size: 36px;
-            text-align: center;
             margin: 30px auto;
+            display: flex;
+            justify-content: center;
         }
         #slider-review {
             height: 200px;
@@ -1306,14 +1323,27 @@
         #footer {
             margin-top: 40px;
         }
+        #footer>.container>.row {
+            padding-right: 0;
+            margin: 0;
+        }
         .footer-col-1 img {
             width: 200px;
-            margin-left: 85%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #footer>.container>.row>.footer-col-1 {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 70px;
         }
         .footer-col-1 p {
+            display: flex;
             font-size: 13px;
-            width: 120%;
-            margin-left: 75%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
         }
         .footer-col-2 h4 {
             display: none;
@@ -1348,12 +1378,13 @@
             top: 70px;
             left: 90px;
         }
+        .copyright {
+            height: 50px;
+            margin-top: 110px;
+        }
     }
     
     @media only screen and (min-width:801px) and (max-width: 1024px) {
-        body>.navbar {
-            padding: 20px;
-        }
         #nav li a {
             padding: 0 5px;
             font-size: 11px;
@@ -1364,6 +1395,9 @@
         }
         .container>.row>.large-6 {
             width: 100%;
+        }
+        .columns {
+            margin: 0 5px;
         }
         .col-md-4 .block-color,
         .col-md-4 .block-color-2,
@@ -1390,6 +1424,9 @@
         }
         .footer-col-2 {
             margin-left: 0px;
+            width: 50%;
+            padding-left: 30px;
+            margin-top: 0;
         }
         #footer h4 {
             font-size: 16px;
@@ -1397,12 +1434,15 @@
     }
     
     @media only screen and (min-width:1025px) and (max-width: 1200px) {
-        body>.navbar {
-            padding: 20px;
+        .logo img {
+            margin-bottom: 10px;
         }
         #nav li a {
             padding: 0 10px;
             font-size: 11px;
+        }
+        .columns {
+            width: 270px;
         }
         .container>.row>.large-6 {
             width: 100%;

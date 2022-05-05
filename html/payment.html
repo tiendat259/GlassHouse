@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Giỏ hàng</title>
+    <title>Thanh toán</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,18 +10,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Shortcut Icon -->
     <link rel="shortcut icon" href="http://glasshouse.vn/theme/default/icon.ico" type="image/x-icon">
-    <!-- Font Family Quicksand-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo Narrow&display=swap" rel="stylesheet">
+    <!-- Font Family Archivo Narrow -->
+    <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet'>
     <!-- Font Awesome -->
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Style Css -->
     <link rel="stylesheet" href="../css/style-cart.css">
+
+
 </head>
 
 <body>
-    <!-- Header -->
     <div class="navbar">
         <div class="logo">
             <a href="index.html"><img src="../img-glass-house/img-logo/logo.png" width="125px"></a>
@@ -69,26 +68,50 @@
                 <li><a href="../html/contact.html">LIÊN HỆ</a></li>
                 <li><a href="hiring.html">tuyển dụng</a></li>
                 <li>
-                    <a href="cart.html" class="button-cart" ;>Giỏ Hàng <i class="fa fa-shopping-cart " style="font-size: 16px;"></i></a>
+                    <a href="#" class="button-cart" ;>Giỏ Hàng <i class="fa fa-shopping-cart " style="font-size: 16px;"></i></a>
                 </li>
             </ul>
         </nav>
         <img src="../img-glass-house/img-logo/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
-    <div class="title ">
-        <h1>Giỏ Hàng</h1>
-        <span>Trang chủ &nbsp;&nbsp;&nbsp;/ <strong>&nbsp;&nbsp;&nbsp;Giỏ hàng</strong></span>
     </div>
-
+    <div class="title ">
+        <h1>Thanh toán</h1>
+        <span>Giỏ hàng &nbsp;&nbsp;&nbsp;/ <strong>&nbsp;&nbsp;&nbsp;Thanh toán</strong></span>
     </div>
     <div class="shopping-cart">
+        <div class="cart-address">
+            <div class="color-gradient">
+            </div>
+            <div class="main-address">
+                <div class="title-address">
+                    <i class="fa fa-map-marker"></i> Địa chỉ nhận hàng
+                </div>
+                <div class="columns-labels">
+                    <label class="product-details"> Thông tin</label>
+                    <label class="address">Địa chỉ</label>
+                    <label class="product-removal"><a href="">Thao tác</a></label>
+                </div>
+                <div class="product">
+                    <div class="product-details">
+                        <div class="product-title">Lê Duy Ngọc</div>
+                        <p class="product-description">09123456789</p>
+                    </div>
+                    <div class="address">
+                        <div class="product-description">Số 242 Cổ Bi, Gia Lâm, Hà Nội.</div>
+                    </div>
+                    <div class="product-removal center-input ">
+                        <a href="" style="color: #c66; font-weight: 800;"> Thay đổi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="column-labels">
             <label class="product-image" style="text-align: center;">Sản phẩm</label>
             <label class="product-details">Tên sản phẩm</label>
             <label class="product-type">Phân loại hàng</label>
             <label class="product-price">Giá</label>
             <label class="product-quantity">Số lượng</label>
-            <label class="product-removal">Thao tác</label>
             <label class="product-line-price">Tổng tiền</label>
         </div>
 
@@ -100,22 +123,17 @@
                 <div class="product-title">Cửa đi một cánh</div>
                 <p class="product-description product-content">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K.</p>
             </div>
-            <div class="product-type ">
-                <div class="product-title ">Loại nhôm: <strong> Roto</strong></div>
-                <p class="product-description ">Màu sắc: <strong>Ghi</strong></p>
-                <p class="product-description ">Phụ kiện: <strong>Roto</strong></p>
-                <p class="product-description ">Loại kính: <strong>Kính hộp</strong></p>
+            <div class="product-type">
+                <div class="product-title">Loại nhôm: <strong>Xingfa</strong></div>
+                <p class="product-description">Màu sắc: <strong>Ghi Xám</strong></p>
+                <p class="product-description">Phụ kiện: <strong>Kinlong</strong></p>
+                <p class="product-description">Loại kính: <strong>Kính dán</strong></p>
             </div>
-            <div class="product-price " style="padding-top: 15px; ">10.000.000</div>
+            <div class="product-price " style="padding-top: 15px; ">10.000.000 VNĐ</div>
             <div class="product-quantity center-input ">
-                <input type="number" value="2" min="1">
+                <p class="product-description product-number">2</p>
             </div>
-            <div class="product-removal center-input ">
-                <button class="remove-product ">
-                    <i class="fa fa-trash "></i>
-      </button>
-            </div>
-            <div class="product-line-price " style="padding-top: 15px; ">20.000.000</div>
+            <div class="product-line-price " style="padding-top: 15px; ">10.000.000 VNĐ</div>
         </div>
 
         <div class="product ">
@@ -127,48 +145,41 @@
                 <p class="product-description product-content">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K.</p>
             </div>
             <div class="product-type ">
-                <div class="product-title ">Loại nhôm: <strong> Roto</strong></div>
-                <p class="product-description ">Màu sắc: <strong>Ghi</strong></p>
-                <p class="product-description ">Phụ kiện: <strong>Roto</strong></p>
-                <p class="product-description ">Loại kính: <strong>Kính hộp</strong></p>
+                <div class="product-title">Loại nhôm: <strong>Xingfa</strong></div>
+                <p class="product-description">Màu sắc: <strong>Ghi Xám</strong></p>
+                <p class="product-description">Phụ kiện: <strong>Kinlong</strong></p>
+                <p class="product-description">Loại kính: <strong>Kính dán</strong></p>
             </div>
-            <div class="product-price " style="padding-top: 15px; ">10.000.000
-
-            </div>
+            <div class="product-price " style="padding-top: 15px; ">10.000.000 VNĐ</div>
             <div class="product-quantity center-input ">
-                <input type="number" value="1" min="1">
+                <p class="product-description product-number">1</p>
             </div>
-            <div class="product-removal center-input ">
-                <button class="remove-product ">
-        <i class="fa fa-trash "></i>
-      </button>
-            </div>
-            <div class="product-line-price " style="padding-top: 15px; ">10.000.000 </div>
+            <div class="product-line-price " style="padding-top: 15px; ">10.000.000 VNĐ</div>
         </div>
 
         <div class="totals ">
             <div class="totals-item ">
                 <label>Thuế (5%)</label>
-                <div class="totals-value " id="cart-tax ">1.500.000 </div>
+                <div class="totals-value " id="cart-tax ">500.000 VNĐ</div>
             </div>
             <div class="totals-item ">
                 <label>Vận chuyển</label>
-                <div class="totals-value " id="cart-shipping ">200.000 </div>
+                <div class="totals-value " id="cart-shipping ">200.000 VNĐ</div>
             </div>
             <div class="totals-item totals-item-total ">
                 <label>Tổng tiền</label>
-                <div class="totals-value " id="cart-total ">13.000.000 </div>
+                <div class="totals-value " id="cart-total ">13.000.000 VNĐ</div>
             </div>
         </div>
 
-        <button class="checkout " onclick="location.href='../html/payment.html'">Thanh Toán</button>
+        <button class="checkout ">Thanh Toán</button>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
     <script>
         /* Set rates + misc */
-        var taxRate = 0.05;
-        var shippingRate = 20000;
+        var taxRate = 500.000;
+        var shippingRate = 200.000;
         var fadeTime = 300;
 
 
@@ -192,16 +203,16 @@
             });
 
             /* Calculate totals */
-            var tax = subtotal * taxRate * 1000;
+            var tax = subtotal * taxRate;
             var shipping = (subtotal > 0 ? shippingRate : 0);
             var total = subtotal + tax + shipping;
 
             /* Update totals display */
             $('.totals-value').fadeOut(fadeTime, function() {
-                $('#cart-subtotal').html(subtotal);
-                $('#cart-tax').html(tax);
-                $('#cart-shipping').html(shipping);
-                $('#cart-total').html(total.toFixed(3));
+                $('#cart-subtotal').html(subtotal.toFixed(2));
+                $('#cart-tax').html(tax.toFixed(2));
+                $('#cart-shipping').html(shipping.toFixed(2));
+                $('#cart-total').html(total.toFixed(2));
                 if (total == 0) {
                     $('.checkout').fadeOut(fadeTime);
                 } else {
@@ -210,22 +221,24 @@
                 $('.totals-value').fadeIn(fadeTime);
             });
         }
+
+
         /* Update quantity */
         function updateQuantity(quantityInput) {
             /* Calculate line price */
             var productRow = $(quantityInput).parent().parent();
             var price = parseFloat(productRow.children('.product-price').text());
             var quantity = $(quantityInput).val();
-            var linePrice = price * quantity * 1000;
+            var linePrice = price * quantity;
+
             /* Update line price display and recalc cart totals */
             productRow.children('.product-line-price').each(function() {
                 $(this).fadeOut(fadeTime, function() {
-                    $(this).text(linePrice.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                    $(this).text(linePrice.toFixed(2));
                     recalculateCart();
                     $(this).fadeIn(fadeTime);
                 });
             });
-
         }
 
 
@@ -289,6 +302,7 @@
             }
         }
     </script>
+    <script src="../function.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
 </body>

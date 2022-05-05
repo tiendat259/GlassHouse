@@ -1,159 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Công trình</title>
-    <link rel="stylesheet" href="../css/style-project.css">
+    <title>Công Trình</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Shortcut Icon -->
     <link rel="shortcut icon" href="http://glasshouse.vn/theme/default/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Family Archivo Narrow -->
     <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet'>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="../css/style-project.css">
 </head>
 
 <body>
-    <!-- Top header -->
-    <div id="top-header">
-        <a href="../html/index.html"><img src="http://glasshouse.vn/uploads/images/logo/logo.png " alt=""></a>
-        <span><i class="fa fa-envelope-o "></i> GLASSHOUSE.VN@GMAIL.COM &nbsp;&nbsp;&nbsp;&nbsp;<i class='fa fa-phone'></i> 0922 995 888 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-mobile "></i> 0913 249 256 - 0902 108 018</span>
-    </div>
-    <hr class="top-hr">
-    <!-- Header -->
-    <div id="header">
-        <a href="../html/index.html"><img src="http://glasshouse.vn/uploads/images/logo/logo.png " alt=""></a>
-        <ul id="nav" style="padding-top: 0px;">
-            <li><a href="../html/index.html"><i class="fa fa-home"> </i> Trang chủ</a></li>
-            <li><a href="http://glasshouse.vn/gioi-thieu.html">GIỚI THIỆU</a></li>
-            <li><a href="../html/service.html">DỊCH VỤ</a></li>
-            <li>
-                <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
-                <ul class="subnav">
+
+    <body>
+        <!-- Header -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img-glass-house/img-logo/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="nav" style="padding-top: 0px;">
+                    <li><a href="../html/index.html"><i class="fa fa-home" style="font-size: 18px;"> </i> Trang chủ</a></li>
+                    <li><a href="http://glasshouse.vn/gioi-thieu.html">GIỚI THIỆU</a></li>
                     <li>
-                        <a href="#">Cửa đi <i class="fa fa-angle-down"></i></a>
-                        <ul class="child-subnav">
-                            <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
-                            <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
-                            <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
+                        <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
+                        <ul class="subnav" style="border-radius: 5px;">
+                            <li>
+                                <a href="#">Cửa đi <i class="fa fa-angle-down"></i></a>
+                                <ul class="child-subnav">
+                                    <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
+                                    <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
+                                    <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
+                                <ul class="child-subnav">
+                                    <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
+                                    <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
+                                    <li><a href="../html/product.CSML.html">Cửa sổ mở lùa</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../html/product-CL.html">Cửa lùa</a>
+                            </li>
+                            <li>
+                                <a href="../html/product-CXG.html">Cửa xếp gấp</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
-                        <ul class="child-subnav">
-                            <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
-                            <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
-                            <li><a href="../html/product.CSML.html">Cửa sổ mở lùa</a></li>
+                        <a href="#">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
+                        <ul class="subnav">
+                            <li><a href="../html/project-KS.html">Khách sạn</a></li>
+                            <li><a href="../html/project-BT.html">Biệt thự</a></li>
+                            <li><a href="../html/project-NP.html">Nhà phố</a></li>
+                            <li><a href="../html/project-CTK.html">Công trình khác</a></li>
                         </ul>
                     </li>
+                    <li><a href="../html/contact.html">LIÊN HỆ</a></li>
+                    <li><a href="hiring.html">tuyển dụng</a></li>
                     <li>
-                        <a href="../html/product-CL.html">Cửa lùa</a>
-                    </li>
-                    <li>
-                        <a href="../html/product-CXG.html">Cửa xếp gấp</a>
+                        <a href="cart.html" class="button-cart" ;>Giỏ Hàng <i class="fa fa-shopping-cart " style="font-size: 16px;"></i></a>
                     </li>
                 </ul>
-            </li>
-            <li>
-                <a href="#">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
-                <ul class="subnav">
-                    <li><a href="../html/project-KS.html">Khách sạn</a></li>
-                    <li><a href="../html/project-BT.html">Biệt thự</a></li>
-                    <li><a href="../html/project-NP.html">Nhà phố</a></li>
-                    <li><a href="../html/project-CTK.html">Công trình khác</a></li>
-                </ul>
-            </li>
-            <li><a href="#">TIN TỨC</a></li>
-            <li><a href="../html/contact.html">LIÊN HỆ</a></li>
-            <li><a href="#">đăng nhập</a></li>
-            <li>
-                <a href="#" style="border: #000 solid 1px; line-height: 30px; border-radius: 30px;">Giỏ Hàng <i class="fa fa-shopping-cart "></i></a></li>
-        </ul>
-    </div>
-    <div id="project">
-        <div class="projec-1">
-            <div class="project-content-1">
-                <div class="bg-white">
-                    <div class="project-count">
-                        <h1>01</h1>
-                        <h4>Công trình 1</h4>
-                    </div>
-                    <h1>
-                        <a href="">Biệt thự <br> Hồ Tây</a>
-                    </h1>
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
-                    <ul>
-                        <li>
-                            <span>Architect: </span> Eema Hirscha</li>
-                        <li>
-                            <span>Client: </span>Lajavik Vo. </li>
-                        <li>
-                            <span>Project Type: </span>Villa, Residence</li>
-                        <li>
-                            <span>Scale: </span> 4000 km </li>
-                        <li><span>Date: </span>Jan, 2018 </li>
-                    </ul>
+            </nav>
+            <img src="../img-glass-house/img-logo/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="title ">
+            <h1>Công trình</h1>
+            <span>Trang chủ &nbsp;&nbsp;&nbsp;/ <strong>&nbsp;&nbsp;&nbsp;Công trình</strong></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="../img-glass-house/img-product/img-project-1.jpg" alt="">
+                    <div class="project-title">biệt thự trích sài</div>
+                    <span class="project-description">
+                        Có mức đầu tư khủng với gói cửa thuộc dòng nhôm Rum và phụ kiện Roto mang lại sự sang trọng cho công trình.
+                    </span>
+                </div>
+                <div class="col-4">
+                    <img src="../img-glass-house/img-product/img-project-1.jpg" alt="">
+                    <div class="project-title">biệt thự trích sài</div>
+                    <span class="project-description">
+                        Có mức đầu tư khủng với gói cửa thuộc dòng nhôm Rum và phụ kiện Roto mang lại sự sang trọng cho công trình.
+                    </span>
+                </div>
+                <div class="col-4">
+                    <img src="../img-glass-house/img-product/img-project-1.jpg" alt="">
+                    <div class="project-title">biệt thự trích sài</div>
+                    <span class="project-description">
+                        Có mức đầu tư khủng với gói cửa thuộc dòng nhôm Rum và phụ kiện Roto mang lại sự sang trọng cho công trình.
+                    </span>
                 </div>
             </div>
-            <div class="project-img-1">
-                <img src="img-glass-house/img-product/img-congtrinh-1.jpg" alt="">
-            </div>
         </div>
-        <div class="projec-2">
-            <div class="project-content-2">
-                <div class="project-count-2">
-                    <h1>01</h1>
-                    <h4>Công trình 1</h4>
-                </div>
-
-                <h1>
-                    <a href="">Biệt thự <br> Hồ Tây</a>
-                </h1>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore.</p>
-                <ul>
-                    <li>
-                        <span>Architect: </span> Eema Hirscha</li>
-                    <li>
-                        <span>Client: </span>Lajavik Vo. </li>
-                    <li>
-                        <span>Project Type: </span>Villa, Residence</li>
-                    <li>
-                        <span>Scale: </span> 4000 km </li>
-                    <li><span>Date: </span>Jan, 2018 </li>
-                </ul>
-            </div>
-            <div class="project-img-2">
-                <img src="img-glass-house/img-product/img-congtrinh-1.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div id="back-to-top">
-        <i class="fa fa-chevron-up"></i>
-    </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop()) {
-                $('back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        $("#back-to-top").click(function() {
-            $('html,body').animate({
-                scrollTop: 0
-            }, 500);
-        });
-    });
-</script>
-
-</html>
+    </body>

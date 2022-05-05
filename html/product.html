@@ -5,329 +5,699 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style-product.css">
     <title>Sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Shortcut Icon -->
     <link rel="shortcut icon" href="http://glasshouse.vn/theme/default/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Family Archivo Narrow -->
     <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet'>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="images/logo-web.png" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="../css/style-product.css">
 
 </head>
 
 <body>
-    <!-- Header -->
-    <div id="header">
-        <a href="../html/index.html"><img src="http://glasshouse.vn/uploads/images/logo/logo.png " alt=""></a>
-        <ul id="nav" style="padding-top: 0px;">
-            <li><a href="../html/index.html"><i class="fa fa-home"> </i> Trang chủ</a></li>
-            <li><a href="http://glasshouse.vn/gioi-thieu.html">GIỚI THIỆU</a></li>
-            <li><a href="../html/service.html">DỊCH VỤ</a></li>
-            <li>
-                <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
-                <ul class="subnav">
-                    <li>
-                        <a href="#">Cửa đi <i class="fa fa-angle-down"></i></a>
-                        <ul class="child-subnav">
-                            <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
-                            <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
-                            <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
-                        <ul class="child-subnav">
-                            <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
-                            <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
-                            <li><a href="../html/product.CSML.html">Cửa sổ mở lùa</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../html/product-CL.html">Cửa lùa</a>
-                    </li>
-                    <li>
-                        <a href="../html/product-CXG.html">Cửa xếp gấp</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
-                <ul class="subnav">
-                    <li><a href="../html/project-KS.html">Khách sạn</a></li>
-                    <li><a href="../html/project-BT.html">Biệt thự</a></li>
-                    <li><a href="../html/project-NP.html">Nhà phố</a></li>
-                    <li><a href="../html/project-CTK.html">Công trình khác</a></li>
-                </ul>
-            </li>
-            <li><a href="#">TIN TỨC</a></li>
-            <li><a href="../html/contact.html">LIÊN HỆ</a></li>
-            <li><a href="#">đăng nhập</a></li>
-            <li>
-                <a href="#" style="border: #000 solid 1px; line-height: 30px; border-radius: 30px;">Giỏ Hàng <i class="fa fa-shopping-cart "></i></a></li>
-        </ul>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../img-glass-house/img-logo/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="nav" style="padding-top: 0px;">
+                <li><a href="../html/index.html"><i class="fa fa-home" style="font-size: 18px;"> </i> Trang chủ</a></li>
+                <li><a href="http://glasshouse.vn/gioi-thieu.html">GIỚI THIỆU</a></li>
+                <li>
+                    <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
+                    <ul class="subnav" style="border-radius: 5px;">
+                        <li>
+                            <a href="#">Cửa đi <i class="fa fa-angle-down"></i></a>
+                            <ul class="child-subnav">
+                                <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
+                                <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
+                                <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
+                            <ul class="child-subnav">
+                                <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
+                                <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
+                                <li><a href="../html/product.CSML.html">Cửa sổ mở lùa</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../html/product-CL.html">Cửa lùa</a>
+                        </li>
+                        <li>
+                            <a href="../html/product-CXG.html">Cửa xếp gấp</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="../html/project-KS.html">Khách sạn</a></li>
+                        <li><a href="../html/project-BT.html">Biệt thự</a></li>
+                        <li><a href="../html/project-NP.html">Nhà phố</a></li>
+                        <li><a href="../html/project-CTK.html">Công trình khác</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/contact.html">LIÊN HỆ</a></li>
+                <li><a href="hiring.html">tuyển dụng</a></li>
+                <li>
+                    <a href="cart.html" class="button-cart" ;>Giỏ Hàng <i class="fa fa-shopping-cart " style="font-size: 16px;"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <img src="../img-glass-house/img-logo/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="title ">
+        <h1>Sản phẩm</h1>
+        <span>Trang chủ &nbsp;&nbsp;&nbsp;/ <strong>&nbsp;&nbsp;&nbsp;Sản phẩm</strong></span>
     </div>
 
-    <div class="container">
-        <p style="margin-left: -190px; margin-top: 50px;">
-            <div id="product">
-                <div class="title-header">
-                    <h2 class="title">sản phẩm</h2>
-                    <div class="title-content"><a href="../html/index.html" style="color: #000;">Trang chủ</a> / <a href="../html/product.html " style="color: #000;">Sản phẩm</a> </p>
-        </div>
-        </div>
-
-        <div class="small-container " style="text-align: center; ">
-            <select class="select-products ">
-            <option>Sắp xếp theo</option>
-            <option>Mới nhất</option>
-            <option>Giá (cao - thấp)</option>
-            <option>Giá (thấp - cao)</option>
-            <option>Bán chạy nhất</option>
-        </select>
-            <div class="row ">
-                <div class="col-4 content">
-                    <img src="../img-glass-house/img-product/img-product-1.jpg ">
-                    <a href="#">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-                    <img src="../img-glass-house/img-product/img-product-2.jpg ">
-                    <a href="">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-                    <img src="../img-glass-house/img-product/img-product-3.jpg ">
-                    <a href="products-detail.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-3.jpg ">
-                    <a href="product-pant-logo.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-4.jpg ">
-                    <a href="product-shoe-superstar.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-5.jpg ">
-                    <a href="product-classic-shirt.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-5.jpg ">
-                    <a href="product-balo-power.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-6.jpg ">
-                    <a href="product-croptop-hoodie.html ">
-                        <h4>
-                            <h4>Cửa sổ mở quay trong</h4>
-                            <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-7.jpg ">
-                    <a href="product-hat-performance.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-8.jpg ">
-                    <a href="product-pan-single-jersey.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-8.jpg ">
-                    <a href="product-adicolor-sweatshirt.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-4 content">
-
-                    <img src="../img-glass-house/img-product/img-product-9.jpg ">
-                    <a href="product-shoe-stansmith.html ">
-                        <h4>Cửa sổ mở quay trong</h4>
-                        <p>Roto simple sliding window</p>
-                    </a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fa fa-expand"></i></a></li>
-                    </ul>
-                </div>
-                <div class="popup-img">
-                    <span>&times;</span>
-                    <img src="../img-glass-house/img-product/img-product-9.jpg " alt="">
-                </div>
-                <a href="#" id="loadMore">Xem thêm</a>
-            </div>
-            <div class="page-btn ">
-                <a href="products.html "><span>1</span></a>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>&#8594;</span>
-            </div>
-        </div>
-        </div>
-        <!------- footer --------->
-        <div id="footer ">
-            <div class="container ">
-                <div class="row ">
-                    <div class=" footer-col-1 ">
-                        <ul>
-                            <img src="http://glasshouse.vn/uploads/images/logo/logo.png ">
-                            <p style="text-align: center; font-weight: 800;font-size: 20px; ">KIẾN TẠO NHữNG CÔNG TRÌNH TƯƠNG LAI
-                            </p>
+    <div class="app__container">
+        <div class="grid">
+            <div class="grid__row app_content">
+                <div class="grid__column-2">
+                    <nav class="category">
+                        <h3 class="category__heading"><i class="fa fa-list"></i> Danh mục</h3>
+                        <ul class="category-list">
+                            <li class="categoty-item category-item--active">
+                                <a href="" class="category-item__link">Cửa đi</a>
+                                <ul class="category-sub-item">
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Cửa đi một cánh</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Cửa đi một cánh và Fix</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Cửa đi nhiều cánh</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="categoty-item">
+                                <a href="" class="category-item__link">Cửa sổ</a>
+                                <ul class="category-sub-item">
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Cửa sổ mở hất</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Cửa sổ mở quay</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="category-item__link">Cửa sổ mở lùa</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="categoty-item">
+                                <a href="" class="category-item__link">Cửa lùa</a>
+                            </li>
+                            <li class="categoty-item">
+                                <a href="" class="category-item__link">Cửa xếp gấp</a>
+                            </li>
                         </ul>
+
+                    </nav>
+                </div>
+                <div class="grid__column-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sắp xếp theo</span>
+                        <button class="home-filter__btn btn" style="background-color: #fff;">Phổ biến</button>
+                        <button class="home-filter__btn btn btn-primary">Mới nhất</button>
+                        <button class="home-filter__btn btn " style="background-color: #fff;">Bán chạy</button>
+
+                        <div class="select-input ">
+                            <span class="select-input__label ">Giá</span>
+                            <i class="select-input_icon fa fa-angle-down "></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="home-filter__page ">
+                            <span class="home-filter__page-num ">
+                                <span class="home-filter__page-current ">1</span>/3
+                            </span>
+
+                            <div class="home-filter__page-control ">
+                                <a href=" " class="home-filter__page-btn home-filter__page-btn--disabled "><i class="fa fa-angle-left "></i></a>
+                            </div>
+                            <div class="home-filter__page-control ">
+                                <a href=" " class="home-filter__page-btn "><i class="fa fa-angle-right "></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-col-2 ">
-                        <h4 style="color: black; ">VĂN PHÒNG ĐẠI DIỆN</h4>
-                        <ul>
-                            <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
-                            <li><i class="fa fa-map-marker "></i> Nguyệt Quế 25-20 </li>
-                            <li>KĐT Vinhome Riverside <br> The Harmony,</li>
-                            <li>Long Biên, Hà Nội.</li>
-                        </ul>
-                        <h4 style="color: black; ">NHÀ MÁY SẢN XUẤT</h4>
-                        <ul>
-                            <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
-                            <li><i class="fa fa-map-marker "></i> Khu Hồng Hà,</li>
-                            <li> số 242 Cổ Bi,</li>
-                            <li> Gia Lâm, Hà Nội</li>
-                        </ul>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="../html/product-CD1C.html">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Product item -->
+                            <div class="grid__column-2">
+                                <a class="home-product-item" href="">
+                                    <div class="home-product-item__img" style="background-image: url('../img-glass-house/img-product/img-product-3.jpg');"></div>
+                                    <h4 class="home-product-item__name">Cửa đi một cánh</h4>
+                                    <div class="home-product-item__price">
+                                        <div class="home-product-item__price-old">1.200.000đ</div>
+                                        <div class="home-product-item__price-current">999.000đ</div>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item__like--liked">
+                                            <i class="home-product-item__like-icon-empty fa fa-heart-o"></i>
+                                            <i class="home-product-item__like-icon-fill fa fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item-rating">
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="home-product-item__star--gold fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item-sold">88 đã bán</span>
+                                    </div>
+
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Roto</span>
+                                        <span class="home-product-item__origin-name">Đức</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa fa-check"></i> Yêu thích
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item_icon fa fa-angle-left"></i>
+                            </a>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">12</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item_icon fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div id="back-to-top ">
-        <i class="fa fa-chevron-up "></i>
-    </div>
+    <!------- footer --------->
+    <div id="footer">
+        <div class="container">
+            <div class="row" style="height: 300px;width: 100%;">
+                <div class="footer-col-1">
+                    <ul>
+                        <img src="../img-glass-house/img-logo/logo.png ">
+                        <p>"Mang chất lượng Châu Âu đến ngôi nhà của bạn"
+                        </p>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h4 style="color: black;text-transform: uppercase; ">công ty cổ phần xây dựng và thương mại glasshouse</h4>
+                    <ul>
+                        <li style="font-weight:bold">Văn phòng đại diện</li>
+                        <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
+                        <li><i class="fa fa-map-marker "></i> Nguyệt Quế 25-20, KĐT Vinhomes RiverSide The Harmony. </li>
+                        <li style="font-weight: bold;">Nhà máy sản xuất</li>
+                        <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
+                        <li><i class="fa fa-map-marker "></i> Khu Hồng Hà, 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>© Copyright 2022 <a href="index.html" style="color: #0183F1;"> Glasshouse, JSC</a></p>
+                </div>
 
+            </div>
+        </div>
+
+    </div>
+    <div class="ring">
+        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            <div class="coccoc-alo-ph-circle"></div>
+            <div class="coccoc-alo-ph-circle-fill"></div>
+            <div class="coccoc-alo-ph-img-circle"></div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("nav")
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
-<script>
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop()) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        $("#back-to-top ").click(function() {
-            $('html,body').animate({
-                scrollTop: 0
-            }, 1000);
-        });
-    });
-</script>
-
-<script>
-    document.querySelectorAll('.content img').forEach(image => {
-        image.onclick = () => {
-            document.querySelector('.popup-img').style.display = 'block';
-            document.querySelector('.popup-img img').src = image.getAttribute('src');
-        }
-    });
-
-    document.querySelector('.popup-img span').onclick = () => {
-        document.querySelector('.popup-img').style.display = 'none';
-    }
-</script>
 
 </html>
