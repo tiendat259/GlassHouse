@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-product-roto.css">
-    <title>Cửa sổ mở quay</title>
+    <title>Sản phẩm | Cửa sổ mở quay</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet'>
@@ -16,181 +16,268 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../function.js"></script>
 </head>
 
 <body>
-
-    <!-- Header -->
-    <div id="header">
-        <a href="../html/index.html"><img src="http://glasshouse.vn/uploads/images/logo/logo.png " alt=""></a>
-        <ul id="nav" style="padding-top: 0px;">
-            <li><a href="../html/index.html"><i class="fa fa-home"> </i> Trang chủ</a></li>
-            <li><a href="http://glasshouse.vn/gioi-thieu.html">GIỚI THIỆU</a></li>
-            <li><a href="../html/service.html">DỊCH VỤ</a></li>
-            <li>
-                <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
-                <ul class="subnav">
-                    <li>
-                        <a href="#">Cửa đi <i class="fa fa-angle-down"></i></a>
-                        <ul class="child-subnav">
-                            <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
-                            <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
-                            <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
-                        <ul class="child-subnav">
-                            <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
-                            <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
-                            <li><a href="../html/product.CSML.html">Cửa sổ mở lùa</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../html/product-CL.html">Cửa lùa</a>
-                    </li>
-                    <li>
-                        <a href="../html/product-CXG.html">Cửa xếp gấp</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
-                <ul class="subnav">
-                    <li><a href="../html/project-KS.html">Khách sạn</a></li>
-                    <li><a href="../html/project-BT.html">Biệt thự</a></li>
-                    <li><a href="../html/project-NP.html">Nhà phố</a></li>
-                    <li><a href="../html/project-CTK.html">Công trình khác</a></li>
-                </ul>
-            </li>
-            <li><a href="#">TIN TỨC</a></li>
-            <li><a href="../html/contact.html">LIÊN HỆ</a></li>
-            <li><a href="#">đăng nhập</a></li>
-            <li>
-                <a href="#" style="border: #000 solid 1px; line-height: 30px; border-radius: 30px;">Giỏ Hàng <i class="fa fa-shopping-cart "></i></a></li>
-        </ul>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../img-glass-house/img-logo/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="nav" style="padding-top: 0px;">
+                <li><a href="../html/index.html"><i class="fa fa-home" style="font-size: 18px;"> </i> Trang chủ</a></li>
+                <li><a href="http://glasshouse.vn/gioi-thieu.html">GIỚI THIỆU</a></li>
+                <li>
+                    <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
+                    <ul class="subnav" style="border-radius: 5px;">
+                        <li>
+                            <a href="#">Cửa đi <i class="fa fa-angle-down"></i></a>
+                            <ul class="child-subnav">
+                                <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
+                                <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
+                                <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
+                            <ul class="child-subnav">
+                                <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
+                                <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
+                                <li><a href="../html/product.CSML.html">Cửa sổ mở lùa</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../html/product-CL.html">Cửa lùa</a>
+                        </li>
+                        <li>
+                            <a href="../html/product-CXG.html">Cửa xếp gấp</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="project.html">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="../html/project-KS.html">Khách sạn</a></li>
+                        <li><a href="../html/project-BT.html">Biệt thự</a></li>
+                        <li><a href="../html/project-NP.html">Nhà phố</a></li>
+                        <li><a href="../html/project-CTK.html">Công trình khác</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/contact.html">LIÊN HỆ</a></li>
+                <li><a href="hiring.html">tuyển dụng</a></li>
+                <li>
+                    <a href="cart.html" class="button-cart" ;>Giỏ Hàng <i class="fa fa-shopping-cart " style="font-size: 16px;"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <img src="../img-glass-house/img-logo/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>
-
-    </div>
-    <div class="container ">
-        <!-- single product details -->
-        <div class="small-container single-product ">
-            <div class="row ">
-                <div class="col-2 ">
-                    <img src="../img-glass-house/img-product/img-product-1.jpg " width="100% " id="productImg ">
-                    <div class="small-img-row ">
-                        <div class="small-img-col ">
-                            <img src="../img-glass-house/img-product/img-product-2.jpg " width="100% " class="small-img ">
-                        </div>
-                        <div class="small-img-col ">
-                            <img src="../img-glass-house/img-product/img-product-3.jpg " width="100% " class="small-img ">
-                        </div>
-                        <div class="small-img-col ">
-                            <img src="../img-glass-house/img-product/img-product-4.jpg " width="100% " class="small-img ">
-                        </div>
-                        <div class="small-img-col ">
-                            <img src="../img-glass-house/img-product/img-product-5.jpg " width="100% " class="small-img ">
-                        </div>
+    <!-- single product details -->
+    <div class="small-container single-product ">
+        <div class="row ">
+            <div class="col-2 ">
+                <img src="../img-glass-house/img-product/CDMC/img-product-CDMC-1.jpg" width="100% " id="productImg ">
+                <div class="small-img-row ">
+                    <div class="small-img-col ">
+                        <img src="../img-glass-house/img-detail/top.jpg " width="100% " class="small-img ">
                     </div>
-                </div>
-                <div class="col-2 " style="display: inline-block; ">
-                    <p>Sản phẩm / Cửa sổ / Cửa sổ mở quay</p>
-                    <h1>Cửa sổ mở quay</h1>
-                    <!-- <h3 style="float: left; margin-top: 10px; font-weight: bold; font-size: 16p;text-transform: uppercase;">Kích thước:</h3> -->
-                    <div class="input-product">
-                        <h3>A SOFT PULLOVER MADE WITH ORGANIC COTTON.</h3>
-                        <p style="text-align: justify;">Feel good. Look good. Do good. Cut with a modern loose fit and blooming with fun florals, this adidas sweatshirt is proof that comfort and style can happily coexist. Plus, knowing it's made with soft organic cotton is just one
-                            more reason to reach for it again and again.
-                        </p>
-
+                    <div class="small-img-col ">
+                        <img src="../img-glass-house/img-detail/lock.jpg" width="100% " class="small-img ">
                     </div>
-
-                    <select class="select-detail " id="select-alu " style="float: left; margin-right: 20px;">
-                        <!-- <option>Loại nhôm</option> -->
-                        <option>Roto</option>
-                        <option>Xingfa</option>
-                        <option>PMI</option>
-                        <option>Shuco</option>
-                    </select>
-                    <select class="select-detail " id="select" style="float: left;margin-right: 90px;">
-                        <option>Màu sắc</option>
-                        <option>Ghi</option>
-                        <option>Xám</option>
-                        <option>Nâu Cafe</option>
-                    </select>
-                    <select class="select-detail " id="select" style="float: left;margin-right: 20px;margin-bottom: 10px;">
-                        <option>Phụ kiện </option>
-                        <option>Phụ kiện Roto</option>
-                        <option>Phụ kiện Kinlong</option>
-                        <option>Phụ kiện Cmech</option>
-                    </select>
-                    <select class="select-detail " id="select" style="float: left;margin-right: 90px;margin-bottom: 10px;">
-                        <option>Kính </option>
-                        <option>Kính hộp</option>
-                        <option>Kính dán</option>
-                        <option>Kính cường lực</option>
-                    </select>
-                    <input type="text" placeholder="Chiều dài" style=" margin: 0px 20px 10px 0px; font-size: 13px;"><input type="text" placeholder="Chiều rộng" style="margin-right: 15px; font-size: 13px;">
-                    <input type="number" value="1" style=" width: 100px;padding-left: 15px; float: left; text-align: center;"><br>
-                    <a href="../html/form-price-report.html" class="btn " style="margin-left: 40px;margin-top: 80px;">Xác nhận</a>
-
+                    <div class="small-img-col ">
+                        <img src="../img-glass-house/img-detail/door-hinge.jpg" width="100% " class="small-img ">
+                    </div>
+                    <div class="small-img-col ">
+                        <img src="../img-glass-house/img-detail/bottom.jpg " width="100% " class="small-img ">
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- title -->
-        <div class="small-container ">
-            <div class="row row-2 ">
-                <h2>Sản phẩm liên quan</h2>
-                <a href="../html/product.html ">Xem thêm <i class="fa fa-long-arrow-right"></i></a>
+            <div class="col-2 " id="form-1">
+                <p>Sản phẩm / Cửa sổ </p>
+                <h1>Cửa sổ mở quay</h1>
+                <span class="product-id">CDMC:001</span>
+                <div class="input-product">
+                    <h3>Inward /Outward Opening Door System.</h3>
+                    <p style="text-align: justify;">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K. FT520 bao gồm FT520W và FT520D. Nó có thể nhận ra các kiểu mở khác nhau như cửa sổ chỉ quay và nghiêng & lật, cửa mở vào trong,
+                        cửa mở ra ngoài, cửa nghiêng & cửa trượt, gấp & trượt, v.v.
+                    </p>
+
+                </div>
+
+                <select class="select-detail" id="select-alu " required="required">
+                        <option value="" disabled="disabled" selected="selected">Loại nhôm</option>
+                        <option value="Roto">Roto</option>
+                        <option value="Xingfa">Xingfa</option>
+                        <option value="PMI">PMI</option>
+                        <option value="Shuco">Shuco</option>
+                    </select>
+                <select class="select-detail" id="select-color" required="required">
+                        <option value="" disabled="disabled" selected="selected">Màu sắc</option>
+                        <option value="Ghi">Ghi</option>
+                        <option value="Đen">Đen</option>
+                        <option value="Nâu Cafe">Nâu Cafe</option>
+                    </select>
+                <select class="select-detail " id="select-accesfa-stack" required="required">
+                        <option value="" disabled="disabled" selected="selected">Phụ kiện</option>
+                        <option value="Roto">Roto</option>
+                        <option value="Kinlong">Kinlong</option>
+                        <option value="Cmech">Cmech</option>
+                    </select>
+                <select class="select-detail " id="select-glass" required="required">
+                        <option value="" disabled="disabled" selected="selected">Loại kính</option>
+                        <option value="Hộp">Hộp</option>
+                        <option value="Dán">Dán</option>
+                        <option value="Cường Lực">Cường lực</option>
+                    </select>
+                <input type="text" placeholder="Chiều dài" id="txtlenght">
+                <input type="text" placeholder="Chiều rộng" id="txtwidth">
+                <input type="number" placeholder="Số lượng" id="txtnumber" value=""><br>
+                <!-- <a href="" class="btn " onclick="datatransfer()">Xác nhận</a> -->
+                <button class="btn" onclick="datatransfer()">Xác nhận</button>
+
+            </div>
+            <div class="col-2 " id="form-2">
+                <p>Sản phẩm / Cửa đi</p>
+                <h1>Cửa đi một cánh</h1>
+                <div class="receipt-box">
+                    <h3 style="font-size: 18px;">Thông tin sản phẩm</h3>
+                    <table class="table">
+                        <tr>
+                            <td>Loại nhôm</td>
+                            <td>
+                                <label for="" id="type"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Màu sắc</td>
+                            <td><label for="" id="color"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước (m2)</td>
+                            <td><label for="" id="size"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Phụ kiện</td>
+                            <td><label for="" id="access"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Kính</td>
+                            <td> <label for="" id="glass"></label></td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td>Báo giá</td>
+                                <td><label for="baogia" id="tongtien"></label></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="payment-info">
+                    <h3 style="font-size: 18px;">Thông tin khách hàng</h3>
+                    <form>
+                        <i class="fa fa-user"></i><label> Họ tên</label>
+                        <input type="text" name="txtName" id="txtName" onblur="checkName()" placeholder="Họ và tên">
+                        <p id="errName"></p>
+                        <i class="fa fa-phone"></i><label> Số điện thoại</label>
+                        <input type="text" name="txtPhone" id="txtPhone" onblur="checkPhone()" placeholder="Số điện thoại">
+                        <p id="errPhone"></p>
+                        <i class="fa fa-home"></i><label> Địa chỉ công trình</label>
+                        <input type="text" name="txtAdd" id="txtAdd" onblur="checkAdd()" placeholder="Địa chỉ công trình">
+                        <p id="errAdd"></p>
+                        <br><br>
+                        <a class="btn" href="../html/payment.html">Xác nhận</a>
+                    </form>
+                </div>
+
             </div>
         </div>
-        <!-- products -->
-        <div class="small-container ">
-            <div class="row ">
-                <div class="col-4 ">
-                    <img src="../img-glass-house/img-product/img-product-7.jpg ">
-                    <h4>Cửa đi một cánh</h4>
+    </div>
+
+    <div class="product-detail">
+        <h3 class="title-detail">
+            Mô tả sản phẩm:
+        </h3>
+        <p class="description-detail">
+            ■ Đặc điểm chính: <br> - Cấu trúc hồ sơ được thiết kế vững chắc với độ dày thành 2mm <br> - Thiết kế nhiều khoang cải thiện độ bền và cách nhiệt, đồng thời cho phép giải pháp phần cứng đặc biệt để cải thiện hiệu suất <br> - Khớp góc kép trên
+            cả tấm chắn và khung để tăng cường độ ổn định <br> - Để đáp ứng kiểu mở nhất với các phần nhỏ của hồ sơ <br> - Tùy chọn trên ngưỡng với độ chặt chẽ cao hoặc truy cập dễ dàng <br> - Độ dày kính dẻo từ 5 ~ 24mm - Trọng lượng tối đa 160kg<br>
+        </p>
+        <div class="image-detail">
+            <img src="../img-glass-house/img-product/CDMC/img-product-CDMC-2.jpg" alt="">
+        </div>
+        <h3 class="small-title-detail">
+            Một số kiểu cửa thông dụng
+        </h3>
+        <div class="image-detail">
+            <img src="../img-glass-house/img-product/CDMC/exem.jpg" alt="">
+        </div>
+        <h3 class="small-title-detail">
+            Thông số kỹ thuật
+        </h3>
+        <div class="image-detail">
+            <img src="../img-glass-house/img-product/CDMC/img-quality-CDMC.jpg" alt="">
+        </div>
+    </div>
+    <div class="small-container ">
+        <div class="row row-2 ">
+            <h2>Sản phẩm liên quan</h2>
+            <a href="../html/product.html ">Xem thêm <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+    </div>
+    <!-- products -->
+    <div class="small-container ">
+        <div class="row ">
+            <div class="col-4 ">
+                <a href="">
+                    <img src="../img-glass-house/img-product/CDMC-Fix/img-CDMC-Fix-1.jpg ">
+                    <h4>Cửa đi một cánh và Fix</h4>
                     <div class="rating ">
                     </div>
-                    <p>$100.00</p>
-                </div>
-                <div class="col-4 ">
-                    <img src="../img-glass-house/img-product/img-product-8.jpg ">
-                    <h4>Cửa đi một cánh</h4>
+                    <p>Xem thêm <i class="fa fa-long-arrow-right"></i></p>
+                </a>
+            </div>
+            <div class="col-4 ">
+                <a href="">
+                    <img src="../img-glass-house/img-product/CDMT/146708746457.jpg ">
+                    <h4>Cửa đi một cánh và Fix</h4>
                     <div class="rating ">
                     </div>
-                    <p>$70.00</p>
-                </div>
-                <div class="col-4 ">
-                    <img src="../img-glass-house/img-product/img-product-8.jpg ">
-                    <h4>Cửa đi một cánh</h4>
+                    <p>Xem thêm <i class="fa fa-long-arrow-right"></i></p>
+                </a>
+            </div>
+            <div class="col-4 ">
+                <a href="">
+                    <img src="../img-glass-house/img-product/CDNC/img-CDNC-1.jpg">
+                    <h4>Cửa đi một cánh và Fix</h4>
                     <div class="rating ">
                     </div>
-                    <p>$70.00</p>
-                </div>
-                <div class="col-4 ">
-                    <img src="../img-glass-house/img-product/img-product-9.jpg ">
-                    <h4>Cửa đi một cánh</h4>
+                    <p>Xem thêm <i class="fa fa-long-arrow-right"></i></p>
+                </a>
+            </div>
+
+            <div class="col-4 ">
+                <a href="">
+                    <img src="../img-glass-house/img-product/CDMC/img-product-CDMC-1.jpg ">
+                    <h4>Cửa đi một cánh và Fix</h4>
                     <div class="rating ">
                     </div>
-                    <p>$70.00</p>
-                </div>
+                    <p>Xem thêm <i class="fa fa-long-arrow-right"></i></p>
+                </a>
             </div>
         </div>
     </div>
     <!------- footer --------->
-    <div id="footer" style="background-color:#ccc ">
-        <div class="container ">
-            <div class="row " style="height: 300px;margin-left: 45px;">
-                <div class="footer-col-1 ">
+    <div id="footer">
+        <div class="container">
+            <div class="row" style="height: 300px;width: 100%;">
+                <div class="footer-col-1">
                     <ul>
-                        <img src="http://glasshouse.vn/uploads/images/logo/logo.png ">
-                        <p style="text-transform: uppercase;">mang chất lượng Châu Âu đến ngôi nhà của bạn
+                        <img src="../img-glass-house/img-logo/logo.png ">
+                        <p>"Mang chất lượng Châu Âu đến ngôi nhà của bạn"
                         </p>
                     </ul>
                 </div>
-
-                <div class="footer-col-2 " style="width:500px">
+                <div class="footer-col-2">
                     <h4 style="color: black;text-transform: uppercase; ">công ty cổ phần xây dựng và thương mại glasshouse</h4>
                     <ul>
                         <li style="font-weight:bold">Văn phòng đại diện</li>
@@ -201,37 +288,34 @@
                         <li><i class="fa fa-map-marker "></i> Khu Hồng Hà, 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
                     </ul>
                 </div>
+                <div class="copyright">
+                    <p>© Copyright 2022 <a href="index.html" style="color: #0183F1;"> Glasshouse, JSC</a></p>
+                </div>
+
             </div>
         </div>
-    </div>
-    </div>
-    <div id="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-    </div>
-    <div id="btn-contact">
-        <a href="mailto:glasshouse.vn@gmail.com"><img src="../img-glass-house/img-logo/logo-mail.png" alt=""><span>Gmail</span></a>
-        <a href="tel:+84902108018"><img src="../img-glass-house/img-logo/logo-phone.png" alt=""><span>Phone</span></a>
-        <a href="https://www.facebook.com/messages/t/107756558339287"><img src="../img-glass-house/img-logo/logo-messenger.png" alt=""><span>Messenger</span></a>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
+    </div>
+    <div class="ring">
+        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            <div class="coccoc-alo-ph-circle"></div>
+            <div class="coccoc-alo-ph-circle-fill"></div>
+            <div class="coccoc-alo-ph-img-circle"></div>
+        </div>
+    </div>
     <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop()) {
-                    $('#back-to-top').fadeIn();
-                } else {
-                    $('#back-to-top').fadeOut();
-                }
-            });
-            $("#back-to-top ").click(function() {
-                $('html,body').animate({
-                    scrollTop: 0
-                }, 1000);
-            });
-        });
+        var MenuItems = document.getElementById("nav")
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
     </script>
-    <!-- js for product gallery -->
 
     <script>
         var ProductImg = document.getElementById("productImg ");

@@ -238,6 +238,11 @@ a:hover {
     border: none;
 }
 
+#form-1 h3 {
+    text-transform: uppercase;
+    padding: 5px 0 5px 0;
+}
+
 #form-2 .btn {
     line-height: 30px;
     text-align: center;
@@ -304,6 +309,28 @@ a:hover {
     text-align: right;
 }
 
+.product-detail {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+
+.title-detail {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.description-detail {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.image-detail {
+    display: flex;
+    justify-content: center;
+}
+
 .row-2 {
     justify-content: space-between;
     margin: 50px auto 20px;
@@ -319,6 +346,7 @@ a:hover {
 
 .col-4 img {
     width: 100%;
+    height: 237.5px;
     border-radius: 2px;
 }
 
@@ -366,7 +394,7 @@ select option[value=""][disabled] {
 .single-product select,
 input {
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
     border: 2px solid #575757;
     outline: none;
     background: none;
@@ -465,6 +493,10 @@ h4 {
     font-size: 13px;
 }
 
+.small-title-detail {
+    padding: 20px;
+}
+
 select:focus {
     outline: none;
 }
@@ -503,10 +535,6 @@ select:focus {
     font-style: italic;
 }
 
-.footer-col-1 {
-    margin-top: 100px;
-}
-
 .footer-col-2 li,
 .footer-col-2 li>a {
     font-size: 16px;
@@ -517,7 +545,6 @@ select:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 37px;
 }
 
 .footer-col-2 h4 {
@@ -948,6 +975,9 @@ li::marker {
     .col-2 img {
         height: auto;
     }
+    .small-img-col img {
+        height: 65px;
+    }
     .input-product {
         height: auto;
     }
@@ -966,6 +996,9 @@ li::marker {
     }
     #form-2 .btn {
         margin-left: 50px;
+    }
+    .image-detail img {
+        width: 100%;
     }
     #footer {
         margin-top: 40px;
@@ -1077,6 +1110,9 @@ li::marker {
     }
     #select-glass {
         margin-right: 0;
+    }
+    .image-detail img {
+        width: 100%;
     }
     .footer-col-1 img {
         width: 250px;

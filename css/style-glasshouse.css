@@ -581,7 +581,7 @@
     }
     
     .news-card__post-date {
-        font-size: .7rem;
+        font-size: 11px;
         margin-bottom: .5rem;
         color: #CCC;
     }
@@ -623,7 +623,7 @@
         border-radius: 0.8rem;
         margin-top: 1rem;
         border: 1px solid #444;
-        font-size: 0.8rem;
+        font-size: 13px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         text-decoration: none;
@@ -631,6 +631,7 @@
         margin-left: auto;
         position: relative;
         z-index: 5;
+        text-align: center;
     }
     
     .news-card__read-more:hover {
