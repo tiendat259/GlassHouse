@@ -199,7 +199,7 @@ p {
     position: absolute;
     height: 275px;
     left: 0;
-    top: 70px;
+    top: 0px;
     right: 0;
     content: "";
     z-index: 1;
@@ -914,16 +914,6 @@ li::marker {
         float: right;
         width: auto;
     }
-    .title::before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 120px;
-        content: "";
-        background-color: rgba(0, 0, 0, 0.36);
-        z-index: 1;
-    }
     .product-image img {
         margin: 0 0 10px 10px;
     }
@@ -962,6 +952,12 @@ li::marker {
         margin-top: 10px;
         float: left;
         margin-left: 80px;
+    }
+    .column-mobile {
+        display: none;
+    }
+    .center-input {
+        margin: 0;
     }
     .product-number {
         float: right;
@@ -1087,6 +1083,12 @@ li::marker {
     #nav .subnav .child-subnav li a {
         background-color: #ccc;
         font-weight: normal;
+    }
+    .column-mobile {
+        display: none;
+    }
+    .center-input {
+        margin: 0;
     }
     .product-removal {
         float: right;
