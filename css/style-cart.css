@@ -199,9 +199,10 @@ p {
     position: absolute;
     height: 275px;
     left: 0;
-    top: 0px;
+    top: 70px;
     right: 0;
     content: "";
+    background-color: rgba(0, 0, 0, 0.36);
     z-index: 1;
 }
 
@@ -217,10 +218,25 @@ p {
     z-index: 2;
 }
 
-.title span {
-    font-size: 14px;
+.title a {
+    font-size: 16px;
     padding: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.title a:hover {
+    text-decoration: none;
+    color: #0183F1;
+}
+
+.link {
     z-index: 2;
+}
+
+.main-address {
+    position: relative;
+    padding: 20px;
 }
 
 .color-gradient {
@@ -229,7 +245,37 @@ p {
     background-position-x: -30px;
     background-size: 116px 3px;
     background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+}
+
+.color-gradient-2 {
+    position: absolute;
+    height: 110px;
+    width: 3px;
+    background-position-y: -30px;
+    background-size: 3px 116px;
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
     margin-bottom: 20px
+}
+
+.color-gradient-3 {
+    position: absolute;
+    top: 485px;
+    height: 3px;
+    width: 78%;
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+}
+
+.color-gradient-4 {
+    position: absolute;
+    top: 375px;
+    right: 110px;
+    height: 113px;
+    width: 3px;
+    background-position-x: -30px;
+    background-size: 3px 116px;
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
 }
 
 .product-image {
@@ -339,7 +385,6 @@ h1 {
 
 .product {
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
 }
 
 .product .product-image {
@@ -421,6 +466,67 @@ h1 {
     font-size: 16px;
     border-radius: 3px;
     margin-bottom: 30px;
+}
+
+#back-to-index {
+    display: none;
+}
+
+.payment-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-content img {
+    width: 100px;
+    height: 100px;
+    margin: 30px 0;
+}
+
+.payment-content h1 {
+    margin: 0 0 20px 0;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    line-height: 1;
+    display: flex;
+    background-color: DodgerBlue;
+    color: white;
+}
+
+button:hover {
+    background: #eee;
+    color: #000;
+}
+
+.countdown {
+    line-height: 1;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-left: 6px;
+    width: 33px;
+    height: 24px;
+}
+
+.numbers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: 0.3s ease transform;
+    text-indent: 0;
 }
 
 #footer {
@@ -953,6 +1059,14 @@ li::marker {
         float: left;
         margin-left: 80px;
     }
+    .product-removal .remove-cart {
+        margin-left: 60px;
+        margin-top: 15px
+    }
+    .product .price-cart {
+        padding-top: 17px;
+        width: 115px;
+    }
     .column-mobile {
         display: none;
     }
@@ -1109,11 +1223,21 @@ li::marker {
     .product .product-line-price:before {
         content: 'Tổng tiền : ';
     }
+    .product-removal .remove-cart {
+        margin-top: 15px;
+        margin-left: -80px;
+    }
+    .price-cart {
+        margin-top: 50px;
+    }
     .totals .totals-item label {
         width: 60%;
     }
     .totals .totals-item .totals-value {
         width: 40%;
+    }
+    .payment-content h3 {
+        font-size: 14px;
     }
     #footer>.container>.row {
         padding-right: 0;
@@ -1172,15 +1296,19 @@ li::marker {
 }
 
 @media screen and (max-width:1024px) {
-    #nav li a {
-        padding: 5px 15px;
-        font-size: 11px;
-    }
     .logo img {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    #nav li a {
+        padding: 0 5px;
+        font-size: 11px;
     }
     .product .product-image img {
         width: 150px;
         margin-left: -30px;
+    }
+    .product-number {
+        margin-top: 15px;
+        margin-bottom: 0;
     }
 }

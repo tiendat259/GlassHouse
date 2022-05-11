@@ -218,9 +218,19 @@
         z-index: 2;
     }
     
-    .title span {
-        font-size: 14px;
+    .title a {
+        font-size: 16px;
         padding: 0 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .title a:hover {
+        text-decoration: none;
+        color: #0183F1;
+    }
+    
+    .link {
         z-index: 2;
     }
     
@@ -285,6 +295,12 @@
     
     .history {
         margin-bottom: 30px;
+    }
+    
+    .image-history {
+        display: flex;
+        justify-content: center;
+        ;
     }
     
     #footer {

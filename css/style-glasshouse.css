@@ -29,7 +29,7 @@
         left: 0px;
         right: 0px;
         background-color: #fff;
-        z-index: 2;
+        z-index: 3;
     }
     
     nav {
@@ -184,6 +184,17 @@
         position: relative;
     }
     
+    #slider>.carousel-inner::after {
+        position: absolute;
+        height: 500px;
+        left: 0;
+        top: 70px;
+        right: 0;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.36);
+        z-index: 1;
+    }
+    
     .carousel-control-prev {
         margin-top: 5%;
     }
@@ -198,14 +209,15 @@
         width: 600px;
         top: 200px;
         left: 20%;
+        z-index: 2;
     }
     
     .slider-content h3 {
         font-size: 20px;
         font-weight: 900;
-        font-size: 15px;
-        color: #265FB4;
+        color: #378dd8;
         line-height: 20px;
+        z-index: 2;
     }
     
     .slider-content h5 {
@@ -689,8 +701,11 @@
     }
     
     #slider-review {
-        background-color: #f5f5f5;
-        background-size: cover;
+        background: url(../img-glass-house/banner-review.png) center no-repeat;
+        height: auto;
+        text-align: center;
+        padding: 30px 0px 20px 0px;
+        position: relative;
     }
     
     .review-content {
@@ -701,15 +716,14 @@
     
     .review-content i {
         text-align: center;
-        margin-left: 50%;
-        color: #000;
+        color: #fff;
         margin-top: 3%;
         margin-bottom: 2%;
     }
     
     .review-content h3 {
         font-size: 15px;
-        color: #000;
+        color: #fff;
         line-height: 10px;
         text-align: center;
         font-family: 'Archivo Narrow';
@@ -717,7 +731,7 @@
     
     .review-content p {
         line-height: 40px;
-        color: #000;
+        color: #fff;
         text-align: center;
         font-family: 'Archivo Narrow';
         font-size: 26px;

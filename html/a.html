@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border-radius: 5px;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.3s ease all;
+            line-height: 1;
+            display: flex;
+            background-color: DodgerBlue;
+            color: white;
+        }
+        
+        button:hover {
+            background: #eee;
+            color: #000;
+        }
+        
+        .icon {
+            margin-right: 8px;
+        }
+        
+        .reset {
+            font-size: 12px;
+            padding: 8px 16px;
+            margin: 50px auto 0;
+        }
+        
+        .countdown {
+            line-height: 1;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin-left: 6px;
+            width: 33px;
+            height: 24px;
+        }
+        
+        .numbers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            transition: 0.3s ease transform;
+            text-indent: 0;
+        }
+        
+        .reset {
+            font-size: 12px;
+            padding: 8px 16px;
+            margin: 100px auto 0;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #3ca8de;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Sau 5 giây sẽ quay lại trang chủ</h3>
+        <button class="next">
+          <span class="countdown">
+            <span class="numbers">
+              <span>5</span>
+              <span>4</span>
+              <span>3</span>
+              <span>2</span>
+              <span>1</span>
+              <span>0</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="reset">Reset</button>
+
+    </div>
+    <script>
+        const countdownArea = document.querySelector('.countdown');
+        const numbersArea = document.querySelector('.numbers');
+        let interval;
+        let count = 0;
+        const height = countdownArea.getBoundingClientRect().height;
+        createTimer();
+
+        function createTimer() {
+            clearInterval(interval);
+            count = 0;
+            numbersArea.style.transform = 'translateY(0)'
+            interval = setInterval(() => {
+                count++;
+                const offset = height * count;
+                numbersArea.style.transform = `translateY(-${offset}px)`
+                if (count >= 5) {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

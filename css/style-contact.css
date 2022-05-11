@@ -218,9 +218,19 @@ p {
     z-index: 2;
 }
 
-.title span {
-    font-size: 14px;
+.title a {
+    font-size: 16px;
     padding: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.title a:hover {
+    text-decoration: none;
+    color: #0183F1;
+}
+
+.link {
     z-index: 2;
 }
 
@@ -234,6 +244,11 @@ p {
 
 .contact-info strong {
     font-size: 24px;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 16px;
 }
 
 .form-group input {
@@ -814,5 +829,15 @@ li::marker {
     }
     .copyright {
         height: 50px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .logo img {
+        margin-bottom: 5px;
+    }
+    #nav li a {
+        padding: 0 5px;
+        font-size: 11px;
     }
 }

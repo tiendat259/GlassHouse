@@ -59,10 +59,10 @@
                 <li>
                     <a href="project.html">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
                     <ul class="subnav">
-                        <li><a href="../html/project-KS.html">Khách sạn</a></li>
                         <li><a href="../html/project-BT.html">Biệt thự</a></li>
                         <li><a href="../html/project-NP.html">Nhà phố</a></li>
-                        <li><a href="../html/project-CTK.html">Công trình khác</a></li>
+                        <li><a href="../html/project-KS.html">Khách sạn</a></li>
+                        <li><a href="../html/project-CTK.html">Dự án</a></li>
                     </ul>
                 </li>
                 <li><a href="../html/contact.html">LIÊN HỆ</a></li>
@@ -77,31 +77,43 @@
     </div>
     <div class="title ">
         <h1>Thanh toán</h1>
-        <span>Giỏ hàng &nbsp;&nbsp;&nbsp;/ <strong>&nbsp;&nbsp;&nbsp;Thanh toán</strong></span>
+        <div class="link" style="z-index: 2;">
+            <a href="project.html">Sản phẩm</a> &nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;
+            <a href="#"><strong>Thanh toán</strong></a>
+        </div>
     </div>
-    <div class="shopping-cart">
+    <div class="shopping-cart" id="shopping-cart">
         <div class="cart-address">
-            <div class="color-gradient">
-            </div>
-            <div class="main-address">
-                <div class="title-address">
-                    <i class="fa fa-map-marker"></i> Địa chỉ nhận hàng
+
+            <div class="tax">
+                <div class="color-gradient">
                 </div>
-                <div class="columns-labels">
-                    <label class="product-details"> Thông tin</label>
-                    <label class="address column-mobile">Địa chỉ</label>
-                    <label class="product-removal column-mobile"><a href="">Thao tác</a></label>
+                <div class="color-gradient-2">
                 </div>
-                <div class="product">
-                    <div class="product-details">
-                        <div class="product-title">Lê Duy Ngọc</div>
-                        <p class="product-description">09123456789</p>
+                <div class="color-gradient-3">
+                </div>
+                <div class="color-gradient-4">
+                </div>
+                <div class="main-address">
+                    <div class="title-address">
+                        <i class="fa fa-map-marker"></i> Địa chỉ nhận hàng
                     </div>
-                    <div class="address">
-                        <div class="product-description">Số 242 Cổ Bi, Gia Lâm, Hà Nội.</div>
+                    <div class="columns-labels">
+                        <label class="product-details"> Thông tin</label>
+                        <label class="address column-mobile">Địa chỉ</label>
+                        <label class="product-removal column-mobile"><a href="">Thao tác</a></label>
                     </div>
-                    <div class="product-removal center-input ">
-                        <a href="" style="color: #c66; font-weight: 800;"> Thay đổi</a>
+                    <div class="product">
+                        <div class="product-details">
+                            <div class="product-title">Lê Duy Ngọc</div>
+                            <p class="product-description">09123456789</p>
+                        </div>
+                        <div class="address">
+                            <div class="product-description">Số 242 Cổ Bi, Gia Lâm, Hà Nội.</div>
+                        </div>
+                        <div class="product-removal center-input ">
+                            <a href="" style="color: #c66; font-weight: 800;"> Thay đổi</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,7 +145,7 @@
             <div class="product-quantity center-input ">
                 <p class="product-description product-number">2</p>
             </div>
-            <div class="product-line-price " style="padding-top: 15px; ">10.000.000 VNĐ</div>
+            <div class="product-line-price " style="padding-top: 15px; ">20.000.000 VNĐ</div>
         </div>
 
         <div class="product ">
@@ -159,8 +171,8 @@
 
         <div class="totals ">
             <div class="totals-item ">
-                <label>Thuế (5%)</label>
-                <div class="totals-value " id="cart-tax ">500.000 VNĐ</div>
+                <label>Thuế (10%)</label>
+                <div class="totals-value " id="cart-tax ">3.000.000 VNĐ</div>
             </div>
             <div class="totals-item ">
                 <label>Vận chuyển</label>
@@ -168,141 +180,163 @@
             </div>
             <div class="totals-item totals-item-total ">
                 <label>Tổng tiền</label>
-                <div class="totals-value " id="cart-total ">13.000.000 VNĐ</div>
+                <div class="totals-value " id="cart-total ">33.200.000 VNĐ</div>
             </div>
         </div>
-
-        <button class="checkout ">Thanh Toán</button>
-
+        <button class="checkout" onclick="someFunc()">Thanh Toán</button>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
-    <script>
-        /* Set rates + misc */
-        var taxRate = 500.000;
-        var shippingRate = 200.000;
-        var fadeTime = 300;
+    <div id="back-to-index">
+        <div class="payment-content">
+            <img src="../img-glass-house/tick-xanh.png" alt="">
+            <h1>Cảm ơn bạn đã thanh toán</h1>
+            <h3 style="padding-bottom: 30px;">Sau 5 giây hệ thống sẽ tự động trở về trang chủ</h3>
+            <button class="btn btn-primary" style="margin-bottom:30px" onclick="window.location='index.html'">Trở về trang chủ</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+        <script>
+            /* Set rates + misc */
+            var taxRate = 500.000;
+            var shippingRate = 200.000;
+            var fadeTime = 300;
 
 
-        /* Assign actions */
-        $('.product-quantity input').change(function() {
-            updateQuantity(this);
-        });
-
-        $('.product-removal button').click(function() {
-            removeItem(this);
-        });
-
-
-        /* Recalculate cart */
-        function recalculateCart() {
-            var subtotal = 0;
-
-            /* Sum up row totals */
-            $('.product').each(function() {
-                subtotal += parseFloat($(this).children('.product-line-price').text());
+            /* Assign actions */
+            $('.product-quantity input').change(function() {
+                updateQuantity(this);
             });
 
-            /* Calculate totals */
-            var tax = subtotal * taxRate;
-            var shipping = (subtotal > 0 ? shippingRate : 0);
-            var total = subtotal + tax + shipping;
-
-            /* Update totals display */
-            $('.totals-value').fadeOut(fadeTime, function() {
-                $('#cart-subtotal').html(subtotal.toFixed(2));
-                $('#cart-tax').html(tax.toFixed(2));
-                $('#cart-shipping').html(shipping.toFixed(2));
-                $('#cart-total').html(total.toFixed(2));
-                if (total == 0) {
-                    $('.checkout').fadeOut(fadeTime);
-                } else {
-                    $('.checkout').fadeIn(fadeTime);
-                }
-                $('.totals-value').fadeIn(fadeTime);
+            $('.product-removal button').click(function() {
+                removeItem(this);
             });
-        }
 
 
-        /* Update quantity */
-        function updateQuantity(quantityInput) {
-            /* Calculate line price */
-            var productRow = $(quantityInput).parent().parent();
-            var price = parseFloat(productRow.children('.product-price').text());
-            var quantity = $(quantityInput).val();
-            var linePrice = price * quantity;
+            /* Recalculate cart */
+            function recalculateCart() {
+                var subtotal = 0;
 
-            /* Update line price display and recalc cart totals */
-            productRow.children('.product-line-price').each(function() {
-                $(this).fadeOut(fadeTime, function() {
-                    $(this).text(linePrice.toFixed(2));
-                    recalculateCart();
-                    $(this).fadeIn(fadeTime);
+                /* Sum up row totals */
+                $('.product').each(function() {
+                    subtotal += parseFloat($(this).children('.product-line-price').text());
                 });
-            });
-        }
+
+                /* Calculate totals */
+                var tax = subtotal * taxRate;
+                var shipping = (subtotal > 0 ? shippingRate : 0);
+                var total = subtotal + tax + shipping;
+
+                /* Update totals display */
+                $('.totals-value').fadeOut(fadeTime, function() {
+                    $('#cart-subtotal').html(subtotal.toFixed(2));
+                    $('#cart-tax').html(tax.toFixed(2));
+                    $('#cart-shipping').html(shipping.toFixed(2));
+                    $('#cart-total').html(total.toFixed(2));
+                    if (total == 0) {
+                        $('.checkout').fadeOut(fadeTime);
+                    } else {
+                        $('.checkout').fadeIn(fadeTime);
+                    }
+                    $('.totals-value').fadeIn(fadeTime);
+                });
+            }
 
 
-        /* Remove item from cart */
-        function removeItem(removeButton) {
-            /* Remove row from DOM and recalc cart total */
-            var productRow = $(removeButton).parent().parent();
-            productRow.slideUp(fadeTime, function() {
-                productRow.remove();
-                recalculateCart();
-            });
-        }
-    </script>
-    <!------- footer --------->
-    <div id="footer">
-        <div class="container">
-            <div class="row" style="height: 300px;width: 100%;">
-                <div class="footer-col-1">
-                    <ul>
-                        <img src="../img-glass-house/img-logo/logo.png ">
-                        <p>"Mang chất lượng Châu Âu đến ngôi nhà của bạn"
-                        </p>
-                    </ul>
-                </div>
-                <div class="footer-col-2">
-                    <h4 style="color: black;text-transform: uppercase; ">công ty cổ phần xây dựng và thương mại glasshouse</h4>
-                    <ul>
-                        <li style="font-weight:bold">Văn phòng đại diện</li>
-                        <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
-                        <li><i class="fa fa-map-marker "></i> Nguyệt Quế 25-20, KĐT Vinhomes RiverSide The Harmony. </li>
-                        <li style="font-weight: bold;">Nhà máy sản xuất</li>
-                        <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
-                        <li><i class="fa fa-map-marker "></i> Khu Hồng Hà, 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p>© Copyright 2022 <a href="index.html" style="color: #0183F1;"> Glasshouse, JSC</a></p>
-                </div>
+            /* Update quantity */
+            function updateQuantity(quantityInput) {
+                /* Calculate line price */
+                var productRow = $(quantityInput).parent().parent();
+                var price = parseFloat(productRow.children('.product-price').text());
+                var quantity = $(quantityInput).val();
+                var linePrice = price * quantity;
 
+                /* Update line price display and recalc cart totals */
+                productRow.children('.product-line-price').each(function() {
+                    $(this).fadeOut(fadeTime, function() {
+                        $(this).text(linePrice.toFixed(2));
+                        recalculateCart();
+                        $(this).fadeIn(fadeTime);
+                    });
+                });
+            }
+
+
+            /* Remove item from cart */
+            function removeItem(removeButton) {
+                /* Remove row from DOM and recalc cart total */
+                var productRow = $(removeButton).parent().parent();
+                productRow.slideUp(fadeTime, function() {
+                    productRow.remove();
+                    recalculateCart();
+                });
+            }
+
+            function payment() {
+                document.getElementById("shopping-cart").style.display = "none";
+                document.getElementById("back-to-index").style.display = "block"
+            }
+        </script>
+        <script>
+            setTimeout(expression, timeout);
+        </script>
+        <script>
+            function someFunc() {
+                payment();
+                setTimeout(function() {
+                    window.location = "index.html";
+                }, 5000);
+
+            }
+        </script>
+        <!------- footer --------->
+        <div id="footer">
+            <div class="container">
+                <div class="row" style="height: 300px;width: 100%;">
+                    <div class="footer-col-1">
+                        <ul>
+                            <img src="../img-glass-house/img-logo/logo.png ">
+                            <p>"Mang chất lượng Châu Âu đến với ngôi nhà của bạn"
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h4 style="color: black;text-transform: uppercase; ">công ty cổ phần xây dựng và thương mại glasshouse</h4>
+                        <ul>
+                            <li style="font-weight:bold">Văn phòng đại diện</li>
+                            <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
+                            <li><i class="fa fa-map-marker "></i> Nguyệt Quế 25-20, KĐT Vinhomes RiverSide The Harmony, Long Biên, Hà Nội. </li>
+                            <li style="font-weight: bold;">Nhà máy sản xuất</li>
+                            <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
+                            <li><i class="fa fa-map-marker "></i> Khu Hồng Hà, 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>© Copyright 2022 <a href="index.html" style="color: #0183F1;"> Glasshouse, JSC</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="ring ">
+            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show ">
+                <div class="coccoc-alo-ph-circle "></div>
+                <div class="coccoc-alo-ph-circle-fill "></div>
+                <div class="coccoc-alo-ph-img-circle "></div>
             </div>
         </div>
+        <script>
+            var MenuItems = document.getElementById("nav")
 
-    </div>
-    <div class="ring ">
-        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show ">
-            <div class="coccoc-alo-ph-circle "></div>
-            <div class="coccoc-alo-ph-circle-fill "></div>
-            <div class="coccoc-alo-ph-img-circle "></div>
-        </div>
-    </div>
-    <script>
-        var MenuItems = document.getElementById("nav")
+            MenuItems.style.maxHeight = "0px"
 
-        MenuItems.style.maxHeight = "0px"
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "300px"
-            } else {
-                MenuItems.style.maxHeight = "0px"
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px"
+                } else {
+                    MenuItems.style.maxHeight = "0px"
+                }
             }
-        }
-    </script>
-    <script src="../function.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+        </script>
+        <script src="../function.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
 </body>

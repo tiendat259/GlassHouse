@@ -218,9 +218,19 @@
         z-index: 2;
     }
     
-    .title span {
-        font-size: 14px;
+    .title a {
+        font-size: 16px;
         padding: 0 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .title a:hover {
+        text-decoration: none;
+        color: #0183F1;
+    }
+    
+    .link {
         z-index: 2;
     }
     
@@ -250,8 +260,12 @@
         margin: 15px 0 15px 0;
     }
     
+    .project-title a:hover {
+        color: #0183F1;
+    }
+    
     .project-description {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
     }
     

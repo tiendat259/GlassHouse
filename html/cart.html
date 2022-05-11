@@ -60,10 +60,10 @@
                 <li>
                     <a href="project.html">CÔNG TRÌNH <i class="fa fa-angle-down"></i></a>
                     <ul class="subnav">
-                        <li><a href="../html/project-KS.html">Khách sạn</a></li>
                         <li><a href="../html/project-BT.html">Biệt thự</a></li>
                         <li><a href="../html/project-NP.html">Nhà phố</a></li>
-                        <li><a href="../html/project-CTK.html">Công trình khác</a></li>
+                        <li><a href="../html/project-KS.html">Khách sạn</a></li>
+                        <li><a href="../html/project-CTK.html">Dự án</a></li>
                     </ul>
                 </li>
                 <li><a href="../html/contact.html">LIÊN HỆ</a></li>
@@ -77,7 +77,10 @@
     </div>
     <div class="title ">
         <h1>Giỏ Hàng</h1>
-        <span>Trang chủ &nbsp;&nbsp;&nbsp;/ <strong>&nbsp;&nbsp;&nbsp;Giỏ hàng</strong></span>
+        <div class="link" style="z-index: 2;">
+            <a href="project.html">Sản phẩm</a> &nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;
+            <a href="#"><strong>Giỏ hàng</strong></a>
+        </div>
     </div>
 
     </div>
@@ -111,11 +114,11 @@
                 <input type="number" value="2" min="1">
             </div>
             <div class="product-removal center-input ">
-                <button class="remove-product ">
+                <button class="remove-product remove-cart">
                     <i class="fa fa-trash "></i>
       </button>
             </div>
-            <div class="product-line-price " style="padding-top: 15px; ">20.000.000</div>
+            <div class="product-line-price price-cart" style="padding-top: 15px; ">20.000.000</div>
         </div>
 
         <div class="product ">
@@ -139,25 +142,25 @@
                 <input type="number" value="1" min="1">
             </div>
             <div class="product-removal center-input ">
-                <button class="remove-product ">
+                <button class="remove-product remove-cart">
         <i class="fa fa-trash "></i>
       </button>
             </div>
-            <div class="product-line-price " style="padding-top: 15px; ">10.000.000 </div>
+            <div class="product-line-price price-cart" style="padding-top: 15px; ">10.000.000</div>
         </div>
 
-        <div class="totals ">
-            <div class="totals-item ">
-                <label>Thuế (5%)</label>
-                <div class="totals-value " id="cart-tax ">1.500.000 </div>
+        <div class="totals">
+            <div class="totals-item">
+                <label>Thuế (10%)</label>
+                <div class="totals-value" id="cart-tax">3.000.000</div>
             </div>
-            <div class="totals-item ">
+            <div class="totals-item">
                 <label>Vận chuyển</label>
-                <div class="totals-value " id="cart-shipping ">200.000 </div>
+                <div class="totals-value" id="cart-shipping">200.000</div>
             </div>
-            <div class="totals-item totals-item-total ">
+            <div class="totals-item totals-item-total">
                 <label>Tổng tiền</label>
-                <div class="totals-value " id="cart-total ">13.000.000 </div>
+                <div class="totals-value" id="cart-total">33.200.000</div>
             </div>
         </div>
 
@@ -167,8 +170,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
     <script>
         /* Set rates + misc */
-        var taxRate = 0.05;
-        var shippingRate = 20000;
+        var taxRate = 10;
+        var shippingRate = 200;
         var fadeTime = 300;
 
 
@@ -192,16 +195,16 @@
             });
 
             /* Calculate totals */
-            var tax = subtotal * taxRate * 1000;
+            var tax = subtotal * taxRate * 10;
             var shipping = (subtotal > 0 ? shippingRate : 0);
-            var total = subtotal + tax + shipping;
+            var total = subtotal * 1000 + tax + shipping;
 
             /* Update totals display */
             $('.totals-value').fadeOut(fadeTime, function() {
                 $('#cart-subtotal').html(subtotal);
-                $('#cart-tax').html(tax);
-                $('#cart-shipping').html(shipping);
-                $('#cart-total').html(total.toFixed(3));
+                $('#cart-tax').html(tax.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
+                $('#cart-shipping').html(shipping.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
+                $('#cart-total').html(total.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
                 if (total == 0) {
                     $('.checkout').fadeOut(fadeTime);
                 } else {
@@ -220,7 +223,7 @@
             /* Update line price display and recalc cart totals */
             productRow.children('.product-line-price').each(function() {
                 $(this).fadeOut(fadeTime, function() {
-                    $(this).text(linePrice.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                    $(this).text(linePrice.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
                     recalculateCart();
                     $(this).fadeIn(fadeTime);
                 });
@@ -246,7 +249,7 @@
                 <div class="footer-col-1">
                     <ul>
                         <img src="../img-glass-house/img-logo/logo.png ">
-                        <p>"Mang chất lượng Châu Âu đến ngôi nhà của bạn"
+                        <p>"Mang chất lượng Châu Âu đến với ngôi nhà của bạn"
                         </p>
                     </ul>
                 </div>
@@ -255,7 +258,7 @@
                     <ul>
                         <li style="font-weight:bold">Văn phòng đại diện</li>
                         <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
-                        <li><i class="fa fa-map-marker "></i> Nguyệt Quế 25-20, KĐT Vinhomes RiverSide The Harmony. </li>
+                        <li><i class="fa fa-map-marker "></i> Nguyệt Quế 25-20, KĐT Vinhomes RiverSide The Harmony, Long Biên, Hà Nội. </li>
                         <li style="font-weight: bold;">Nhà máy sản xuất</li>
                         <li><a href="tel:+84922955888 " style="color: #000; text-decoration: none; cursor: pointer; "><i class="fa fa-mobile "></i> 0922 995 888</a></li>
                         <li><i class="fa fa-map-marker "></i> Khu Hồng Hà, 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
