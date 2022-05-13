@@ -1399,7 +1399,10 @@
         }
     }
     
-    @media only screen and (min-width:801px) and (max-width: 1024px) {
+    @media only screen and (min-width:801px) and (max-width: 1056px) {
+        body>.navbar {
+            padding: 0 0% 0 3%;
+        }
         #nav li a {
             padding: 0 5px;
             font-size: 11px;
