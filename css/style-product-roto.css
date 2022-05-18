@@ -32,6 +32,10 @@ body>.navbar {
     z-index: 2;
 }
 
+.logo img {
+    width: 250px;
+}
+
 nav {
     line-height: 60px;
     flex: 1;
@@ -282,10 +286,29 @@ a:hover {
 #form-2 .btn {
     font-size: 16px;
     display: inline-block;
-    background: #575757;
+    background: #46a9ff;
     color: black;
     padding: 8px 30px;
-    margin: 30px 0;
+    border-radius: 5px;
+    transition: background 0.5s
+}
+
+.form-info input[type=text] {
+    width: 100%;
+    padding: 8px 10px 10px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-info .btn {
+    font-size: 16px;
+    display: inline-block;
+    background: #46a9ff;
+    color: black;
+    padding: 8px 30px;
     border-radius: 5px;
     transition: background 0.5s
 }
@@ -920,6 +943,9 @@ select:focus {
 }
 
 @media only screen and (min-width:320px) and (max-width: 800px) {
+    .logo img {
+        width: 150px;
+    }
     #nav {
         position: absolute;
         top: 70px;
@@ -1128,9 +1154,13 @@ select:focus {
     }
 }
 
-@media only screen and (min-width:1025px) and (max-width: 1395px) {
+@media only screen and (min-width:1025px) and (max-width: 1525px) {
+    .logo img {
+        width: 200px;
+        margin-bottom: 10px;
+    }
     body>.navbar {
-        padding: 0 9%;
+        padding: 0 7%;
     }
     #nav li a {
         padding: 0 3px;

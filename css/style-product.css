@@ -322,7 +322,7 @@ a:hover {
     line-height: 16px;
     font-weight: bold;
     color: #000;
-    padding: 4px 13px;
+    padding: 4px 25px;
     display: block;
     transition: right linear 0.1s;
     right: 0;
@@ -1313,7 +1313,7 @@ i.home-product-item__like-icon-fill {
         width: 15%;
     }
     .category-item__link {
-        padding: 4px 0 4px 16px;
+        padding: 4px 25px 4px 16px;
     }
     #footer img {
         width: 200px;
