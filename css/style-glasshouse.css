@@ -306,6 +306,10 @@
         border-top: 1px solid #262262;
     }
     
+    .columns a:hover {
+        text-decoration: none;
+    }
+    
     #product h3 {
         font-weight: 800;
         font-size: 24px;
@@ -327,11 +331,13 @@
     
     #product .product-content h4 {
         padding-top: 10px;
+        color: #000;
     }
     
     .about-us {
         width: 100%;
-        height: 525px;
+        height: auto;
+        padding-bottom: 200px;
         background-color: #e0ded8;
     }
     
@@ -454,6 +460,7 @@
         flex-flow: row wrap;
         justify-content: center;
         padding: 0.5rem;
+        padding-bottom: 20px
     }
     
     .news-card {
@@ -613,7 +620,7 @@
     
     #partner {
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
     
     .partner-logo-1 img {
@@ -1232,9 +1239,6 @@
         .col-md-4 .block-color-4 {
             display: none;
         }
-        .about-us {
-            height: 750px;
-        }
         .title-about {
             font-size: 36px;
             margin: 30px auto;
@@ -1332,15 +1336,18 @@
             padding: 0 3px;
             font-size: 11px;
         }
-        #product>.container>.row {
+        #product>.container>.row>.col-md-6 {
+            flex: none;
             max-width: 100%;
-            margin-left: 0;
         }
-        .container>.row>.large-6 {
-            width: 100%;
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .columns {
-            margin: 0 22px;
+        #product>.container>.row>.col-md-3 {
+            flex: 0 0 33%;
+            max-width: 33%;
         }
         .col-md-4 .block-color,
         .col-md-4 .block-color-2,
@@ -1361,27 +1368,18 @@
             width: 150px;
             height: 150px;
         }
-        .footer-col-1 img {
-            width: 250px;
-            margin-left: 15%;
-        }
-        .footer-col-2 {
-            margin-left: 0px;
-            width: 50%;
-            padding-left: 30px;
-            margin-top: 0;
-        }
-        #footer h4 {
-            font-size: 16px;
+        #footer img {
+            width: 200px;
         }
     }
     
-    @media only screen and (min-width:1025px) and (max-width: 1200px) {
+    @media only screen and (min-width:1025px) and (max-width: 1215px) {
         .logo img {
+            width: 200px;
             margin-bottom: 10px;
         }
         #nav li a {
-            padding: 0 10px;
+            padding: 0 3px;
             font-size: 11px;
         }
         .columns {
@@ -1413,21 +1411,11 @@
             width: 150px;
             height: 150px;
         }
-        .footer-col-1 img {
-            width: 250px;
-            margin-left: 23%;
-        }
-        .footer-col-2 {
-            margin-left: 40px;
-        }
-        #footer h4 {
-            font-size: 16px;
-        }
     }
     
-    @media only screen and (min-width:1201px) and (max-width: 1500px) {
+    @media only screen and (min-width:1201px) and (max-width: 1531px) {
         #nav li a {
-            padding: 0 10px;
+            padding: 0 3px;
         }
         #product>.container>.row {
             max-width: 100%;
