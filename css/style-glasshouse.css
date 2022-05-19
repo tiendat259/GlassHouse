@@ -742,6 +742,7 @@
         position: fixed;
         left: 10px;
         bottom: 10px;
+        z-index: 2;
     }
     
     .coccoc-alo-ph-circle {
@@ -1078,6 +1079,7 @@
         position: fixed;
         bottom: 35px;
         right: 75px;
+        z-index: 2;
     }
     
     .chatbox-icon img {
@@ -1086,19 +1088,11 @@
     
     .chat {
         position: relative;
-        /* top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-*/
         width: 100%;
         height: calc(100% - 15px);
         max-height: 500px;
         z-index: 10;
         overflow: hidden;
-        /*box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
-*/
-        /* background: rgba(0, 0, 0, .5);
-*/
         background: transparent;
         border-radius: 20px;
         -webkit-border-radius: 20px;
@@ -1137,10 +1131,9 @@
     }
     
     .chat-title h2 {
-        /* color: rgba(255, 255, 255, .8);
-*/
         font-size: 13px;
         letter-spacing: 1px;
+        text-transform: none;
     }
     
     .chat-title .avatar {
@@ -1188,21 +1181,15 @@
         -moz-border-radius: 20px 20px 20px 0;
         border-radius: 20px 20px 20px 0;
         background: #eee;
-        /*rgba(0, 0, 0, 0.1);
-*/
         margin: 8px 0;
         font-size: 14px;
         line-height: 1.4;
         margin-left: 35px;
         position: relative;
         border: 1px solid #ccc;
-        /* color: rgba(255, 255, 255, .7);
-*/
     }
     
     .messages .message .timestamp {
-        /*text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-*/
         position: absolute;
         bottom: -15px;
         font-size: 10px;
@@ -1224,16 +1211,6 @@
         bottom: -15px;
         right: 16px;
         font-size: 12px;
-    }
-    
-    .messages .message::before {
-        /* content: '';
- position: absolute;
- bottom: -6px;
- border-top: 6px solid rgba(0, 0, 0, 0.1);
- left: 0;
- border-right: 7px solid transparent;
-*/
     }
     
     .messages .message .avatar {
@@ -1260,29 +1237,11 @@
     .messages .message.message-personal {
         float: right;
         text-align: right;
-        /* background: linear-gradient(120deg, #ddd, #eee);
-*/
         background: #fff;
         border: 1px solid #ccc;
-        /*#4A90E2*/
         -webkit-border-radius: 20px 20px 0 20px;
         -moz-border-radius: 20px 20px 0 20px;
         border-radius: 20px 20px 0 20px;
-    }
-    
-    .messages .message.message-personal::before {
-        /* content:"";
- border-color:#4A90E2 transparent;
- width:0;
- border-style:solid;
-*/
-        /* left: auto;
- right: 0;
- border-right: none;
- border-left: 8px solid transparent;
- border-top: 9px solid #fff;
- bottom: -8px;
-*/
     }
     
     .messages .message:last-child {
@@ -1297,17 +1256,11 @@
     
     .messages .message.loading::before {
         position: relative;
-        /* top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-*/
         content: '';
         display: block;
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        /* background: rgba(255, 255, 255, .5);
-*/
         background: #888;
         z-index: 2;
         margin-top: 4px;
@@ -1326,17 +1279,11 @@
     
     .messages .message.loading span::before {
         position: relative;
-        /* top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-*/
         content: '';
         display: block;
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        /* background: rgba(255, 255, 255, .5);
-*/
         background: #888;
         z-index: 2;
         margin-top: 4px;
@@ -1346,17 +1293,11 @@
     
     .messages .message.loading span::after {
         position: relative;
-        /* top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-*/
         content: '';
         display: block;
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        /* background: rgba(255, 255, 255, .5);
-*/
         background: #888;
         z-index: 2;
         margin-top: 4px;
@@ -1372,13 +1313,6 @@
         background: #fff;
         margin: 2px auto;
         padding: 10px;
-        /*-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
- -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
- box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
-*/
-        /*background: rgba(0, 0, 0, 0.3);
- border-top:1px solid #e3e3e3;
-*/
         position: relative;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -1392,8 +1326,6 @@
         border: none;
         outline: none !important;
         resize: none;
-        /* color: rgba(255, 255, 255, .8);
-*/
         font-size: 15px;
         height: 24px;
         margin: 0;
@@ -1413,8 +1345,6 @@
         right: 10px;
         color: #4a90e2;
         border: none;
-        /* background: #c29d5f;
-*/
         background: #fff;
         font-size: 12px;
         text-transform: uppercase;
@@ -1947,7 +1877,7 @@
             top: -5px;
             left: 10px;
         }
-        .chat {
+        .chatbox-icon {
             width: 60px;
             height: 60px;
             right: 25px;
