@@ -1476,15 +1476,12 @@ screen and (max-width: 450px) {
         border-radius: 0 !important;
         max-height: initial !important;
     }
-    .chat-title {
-        padding: 20px 20px 15px 10px !important;
-        text-align: left;
-    }
-    .chat-title h2 {
-        text-align: center;
-    }
     .menu .button {
         border-top-right-radius: 0;
+    }
+    .chat-title {
+        padding: 20px 20px 15px 10px !important;
+        text-align: center;
     }
     .circle {
         display: none;
