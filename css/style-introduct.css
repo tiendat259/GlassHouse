@@ -1246,6 +1246,9 @@
         .circle {
             display: none;
         }
+        .half {
+            display: none;
+        }
         .menu .button {
             border-top-right-radius: 0;
         }

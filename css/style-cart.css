@@ -1486,6 +1486,9 @@ screen and (max-width: 450px) {
     .circle {
         display: none;
     }
+    .half {
+        display: none;
+    }
 }
 
 @media only screen and (min-device-width: 667px) {
