@@ -32,6 +32,10 @@ body>.navbar {
     z-index: 3;
 }
 
+.logo img {
+    margin-bottom: 30px;
+}
+
 nav {
     line-height: 60px;
     flex: 1;
@@ -412,6 +416,11 @@ a:hover {
     background: transparent;
     border: 1px solid #0183F1;
     border-radius: 5px;
+}
+
+.apply:hover {
+    background-color: #0183F1;
+    color: #fff;
 }
 
 #footer {

@@ -282,6 +282,7 @@ a:hover {
 
 .category-item {
     position: relative;
+    width: 100%;
 }
 
 .category-list>.category-item:first-child::before {
@@ -290,7 +291,6 @@ a:hover {
 
 .category>ul>li::before {
     content: "";
-    border-top: 1px solid #E1E1E1;
     position: absolute;
     top: 0;
     left: 16px;
@@ -343,19 +343,19 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-left: -12px;
-    margin-right: -12px;
+    margin-right: -25px;
 }
 
 .grid__column-2 {
     padding-left: 12px;
     padding-right: 12px;
-    width: 19.6667%;
+    width: 24.667%;
 }
 
 .grid__column-10 {
     padding-left: 12px;
     padding-right: 12px;
-    width: 80.3334%;
+    width: 74.3334%;
 }
 
 .btn {
@@ -523,162 +523,18 @@ a:hover {
 .home-product-item__img {
     padding-top: 100%;
     background-repeat: no-repeat;
-    background-size: 208px 160px;
+    background-size: 250px 200px;
     background-position: top center;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
 
 .home-product-item__name {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     color: #000;
-    line-height: 18px;
-    height: 20px;
     margin: 10px 10px 6px;
-    overflow: hidden;
-    display: block;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-}
-
-.home-product-item__price {
-    margin: 0 10px;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-
-.home-product-item__price .home-product-item__price-old {
-    font-size: 14px;
-    color: #666;
-    text-decoration: line-through;
-}
-
-.home-product-item__price-current {
-    font-size: 16px;
-    color: #EE4D2d;
-    margin-left: 10px;
-}
-
-.home-product-item__action {
-    display: flex;
-    justify-content: space-between;
-    margin: 6px 10px 0;
-}
-
-.home-product-item__like {
-    font-size: 14px;
-}
-
-i.home-product-item__like-icon-fill {
-    color: #F63D30;
-    display: none;
-}
-
-.home-product-item__like--liked .home-product-item__like-icon-fill {
-    display: inline-block;
-}
-
-.home-product-item__like--liked .home-product-item__like-icon-empty {
-    display: none;
-}
-
-.home-product-item-rating {
-    font-size: 10px;
-    transform-origin: right;
-    color: #d5d5d5;
-    margin: 1px 0 0 auto;
-}
-
-.home-product-item__star--gold {
-    color: #ffce3e;
-}
-
-.home-product-item-sold {
-    color: #000;
-    font-size: 13px;
-    margin-left: 6px;
-}
-
-.home-product-item__origin {
-    display: flex;
-    margin: 0 10px;
-    padding-bottom: 10px;
-    font-size: 13px;
-    color: #595959;
-    font-weight: 300;
-}
-
-.home-product-item__origin-name {
-    margin-left: auto;
-}
-
-.home-product-item__favourite {
-    position: absolute;
-    top: 10px;
-    left: -4px;
-    background-color: #e4271a;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    padding-right: 4px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-.home-product-item__favourite::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    border-top: 3px solid #e4271a;
-    border-left: 3px solid transparent;
-    filter: brightness(60%);
-}
-
-.home-product-item__favourite i {
-    font-size: 12px;
-    margin: 0 3px 0 5px;
-}
-
-.home-product-item__sale-off {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 36px;
-    background-color: rgba(255, 216, 64, 0.94);
     text-align: center;
-    border-top-right-radius: 2px;
-}
-
-.home-product-item__sale-off::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    border-width: 0 20px 5px;
-    border-style: solid;
-    border-color: transparent rgba(255, 216, 64, 0.94) transparent rgba(255, 216, 64, 0.94);
-}
-
-.home-product-item__sale-off-percent {
-    color: #F63D30;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
-}
-
-.home-product-item__sale-off-label {
-    color: #fff;
-    font-size: 13px;
-    line-height: 13px;
-    position: relative;
-    top: -2px;
-    font-weight: 400;
 }
 
 .pagination {
