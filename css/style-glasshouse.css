@@ -1992,7 +1992,11 @@ screen and (max-width: 450px) {
     }
 }
 
-@media only screen and (min-width:1201px) and (max-width: 1675px) {
+@media only screen and (min-width:1201px) and (max-width: 1450px) {
+    .img-logo {
+        width: 200px;
+        margin-bottom: 7px;
+    }
     #nav li a {
         padding: 0 3px;
     }
@@ -2020,5 +2024,17 @@ screen and (max-width: 450px) {
     }
     .col-md-4>.block-color-4 {
         margin: -140px 0px 0 -20%;
+    }
+}
+
+@media only screen and (min-width:1451px) and (max-width: 1650px) {
+    .img-logo {
+        width: 250px;
+    }
+    body>.navbar {
+        padding: 0 10%;
+    }
+    #nav li a {
+        padding: 0 3px;
     }
 }

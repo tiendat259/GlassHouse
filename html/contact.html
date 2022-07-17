@@ -22,8 +22,73 @@
 <body>
     <!-- Header -->
     <div class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="../img-glass-house/img-logo/logo.png" width="250px"></a>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../img-glass-house/img-logo/logo.png" width="250px"></a>
+            </div>
+            <nav>
+                <ul id="nav" style="padding-top: 0px;">
+                    <li><a href="../html/index.html"><i class="fa fa-home" style="font-size: 18px;"> </i> Trang chủ</a></li>
+                    <li><a href="introduce.html">GIỚI THIỆU</a></li>
+                    <li>
+                        <a href="../html/product.html">SẢN PHẨM <i class="fa fa-angle-down"></i> </a>
+                        <ul class="subnav" style="border-radius: 5px;">
+                            <li>
+                                <a href="#">Cửa đi<i class="fa fa-angle-down"></i></a>
+                                <ul class="child-subnav">
+                                    <li><a href="../html/product-CD1C.html">Cửa đi 1 cánh</a></li>
+                                    <li><a href="../html/product-CD1C-fix.html">Cửa đi 1 cánh và Fix</a></li>
+                                    <li><a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cửa sổ <i class="fa fa-angle-down"></i></a>
+                                <ul class="child-subnav">
+                                    <li><a href="../html/product-CSMH.html">Cửa sổ mở hất</a></li>
+                                    <li><a href="../html/product-CSMQ.html">Cửa sổ mở quay</a></li>
+                                    <li><a href="../html/product.CSML.html">Cửa sổ mở trượt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../html/product-CL.html">Cửa trượt <i class="fa fa-angle-down"></i></a>
+                                <ul class="child-subnav">
+                                    <li><a href="../html/product-CL.html">Cửa trượt Inowa</a></li>
+                                    <li><a href="../html/product-CuaNhacTruot.html">Cửa nhấc trượt</a></li>
+                                    <li><a href="../html/product-Cualattruot.html">Cửa lật trượt</a></li>
+                                    <li><a href="../html/product-CXG.html">Cửa gấp trượt</a></li>
+                                    <li><a href="../html/cua-quay-truot.html">Cửa quay trượt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../html/kinh-mat-dung.html">Vách kính mặt dựng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" style="color: #cf2e2e">sản phẩm ROTO <i class="fa fa-angle-down"></i></a>
+                        <ul class="subnav">
+                            <li>
+                                <a href="../html/cua-nhom-roto.html" style="color: #cf2e2e">Cửa nhôm Rotoi</a></li>
+                            <li>
+                                <a href=" ../html/phu-kien-roto.html " style="color: #cf2e2e">Phụ kiện Roto</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="project.html ">CÔNG TRÌNH <i class="fa fa-angle-down "></i></a>
+                        <ul class="subnav ">
+                            <li><a href="../html/project-BT.html ">Biệt thự</a></li>
+                            <li><a href="../html/project-NP.html ">Nhà phố</a></li>
+                            <li><a href="../html/project-KS.html ">Khách sạn</a></li>
+                            <li><a href="../html/project-CTK.html ">Dự án</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/contact.html ">LIÊN HỆ</a></li>
+                    <li><a href="hiring.html ">tuyển dụng</a></li>
+                    <li>
+                        <a href="cart.html" class="button-cart"><i class="fa fa-shopping-cart " style="font-size: 16px; "></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="../img-glass-house/img-logo/menu.png" class="menu-icon" onclick="menutoggle() ">
         </div>
         <nav>
             <ul id="nav" style="padding-top: 0px;">
@@ -100,12 +165,12 @@
             <div class="row">
                 <div class="contact-info col-sm-4">
                     <strong style="font-size: 20px; ">Văn phòng đại diện</strong>
-                    <p> <i class="fa fa-map-maker "></i>Nguyệt Quế 25 VinHomes Riverside The Harmony,<br> Long Biên, Hà Nội <br>Giờ làm việc: 7:30 - 17:30 <br> Tel: 0913 249 256 - 0902 108 018 <br>Email: glasshouse.vn@gmail.com</p>
-                    <a href=" ">Hotline | +84902108018</a> <br>
+                    <p> <i class="fa fa-map-maker "></i>Nguyệt Quế 25 VinHomes Riverside The Harmony,<br> Long Biên, Hà Nội <br>Giờ làm việc: 7:30 - 17:30 <br>Email: glasshouse.vn@gmail.com</p>
+                    <a href=" ">Hotline | +84981961668</a> <br>
                     <hr>
                     <strong style="font-size: 20px; ">Nhà máy sản xuất</strong>
-                    <p><i class="fa fa-map-maker "></i>Khu Hồng Hà, số 242 Cổ Bi, Gia Lâm, Hà Nội <br>Giờ làm việc: 7:30 - 17:30 <br> Tel: 0922 995 888 <br></p>
-                    <a href=" ">Hotline | +84902108018</a>
+                    <p><i class="fa fa-map-maker "></i>Khu Hồng Hà, số 242 Cổ Bi, Gia Lâm, Hà Nội <br>Giờ làm việc: 7:30 - 17:30 <br></p>
+                    <a href=" ">Hotline | +84981961668</a>
                 </div>
                 <div class="contact-form col-sm-8 ">
                     <form action="/action_page.php " class="needs-validation " novalidate>

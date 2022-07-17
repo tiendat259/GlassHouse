@@ -51,13 +51,14 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="../html/product-CL.html">Cửa trượt</a>
-                        </li>
-                        <li>
-                            <a href="../html/product-CXG.html">Cửa gấp trượt</a>
-                        </li>
-                        <li>
-                            <a href="../html/cua-quay-truot.html">Cửa trượt quay</a>
+                            <a href="../html/product-CL.html">Cửa trượt <i class="fa fa-angle-down"></i></a>
+                            <ul class="child-subnav">
+                                <li><a href="../html/product-CL.html">Cửa trượt Inowa</a></li>
+                                <li><a href="../html/product-CuaNhacTruot.html">Cửa nhấc trượt</a></li>
+                                <li><a href="../html/product-Cualattruot.html">Cửa lật trượt</a></li>
+                                <li><a href="../html/product-CXG.html">Cửa gấp trượt</a></li>
+                                <li><a href="../html/cua-quay-truot.html">Cửa quay trượt</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="../html/kinh-mat-dung.html">Vách kính mặt dựng</a>
@@ -89,6 +90,13 @@
             </ul>
         </nav>
         <img src="../img-glass-house/img-logo/menu.png" class="menu-icon" onclick="menutoggle() ">
+    </div>
+    <div class="title ">
+        <h1>Tuyển dụng</h1>
+        <div class="link" style="z-index: 2;">
+            <a href="index.html">Trang chủ</a> &nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;
+            <a href="#"><strong>Tuyển dụng </strong></a>
+        </div>
     </div>
     <div class="main-content container ">
         <div class="title-content" style="display: flex;justify-content: center;">
@@ -392,15 +400,15 @@
         }
     </script>
     <script>
-        var MenuItems = document.getElementById("nav ")
+        var MenuItems = document.getElementById("nav")
 
-        MenuItems.style.maxHeight = "0px "
+        MenuItems.style.maxHeight = "0px"
 
         function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px ") {
-                MenuItems.style.maxHeight = "300px "
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px"
             } else {
-                MenuItems.style.maxHeight = "0px "
+                MenuItems.style.maxHeight = "0px"
             }
         }
     </script>

@@ -176,7 +176,6 @@ p {
 }
 
 .button-cart {
-    border: #000 solid 1px;
     line-height: 30px;
     border-radius: 30px;
     position: relative;
@@ -1268,6 +1267,7 @@ screen and (max-width: 450px) {
 @media only screen and (min-width:320px) and (max-width: 800px) {
     .logo img {
         width: 150px;
+        margin-bottom: 5px;
     }
     #nav {
         position: absolute;
@@ -1384,14 +1384,14 @@ screen and (max-width: 450px) {
 
 @media screen and (min-width:800px) and (max-width:1024px) {
     .logo img {
-        width: 150px;
-        margin-bottom: 10px;
+        width: 125px;
+        margin-bottom: 7px;
     }
     body>.navbar {
-        padding: 0 0% 0 3%;
+        padding: 0 1%;
     }
     #nav li a {
-        padding: 0 3px;
+        padding: 0;
         font-size: 11px;
     }
     #footer img {
@@ -1404,6 +1404,9 @@ screen and (max-width: 450px) {
         width: 200px;
         margin-bottom: 10px;
     }
+    body>.navbar {
+        padding: 0 7%;
+    }
     #nav li a {
         padding: 0 3px;
         font-size: 11px;
@@ -1412,8 +1415,22 @@ screen and (max-width: 450px) {
 
 @media screen and (min-width:1300px) and (max-width:1450px) {
     .logo img {
-        width: 200px;
+        width: 250px;
         margin-bottom: 10px;
+    }
+    #nav li a {
+        padding: 0 10px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width:1451px) and (max-width:1620px) {
+    .logo img {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    body>.navbar {
+        padding: 0 10%;
     }
     #nav li a {
         padding: 0 10px;
