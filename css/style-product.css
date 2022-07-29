@@ -110,7 +110,7 @@ p {
     display: block;
     color: #000;
     text-decoration: none;
-    padding: 0 24px;
+    padding: 0 15px;
     text-transform: uppercase;
 }
 
@@ -341,8 +341,6 @@ a:hover {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -25px;
 }
 
 .grid__column-2 {
@@ -1571,7 +1569,6 @@ screen and (max-width: 450px) {
     }
     .button-cart {
         width: 130px;
-        margin-left: 20px;
     }
     #nav .subnav .child-subnav {
         display: block;
@@ -1606,6 +1603,9 @@ screen and (max-width: 450px) {
     }
     .home-filter__page {
         display: none;
+    }
+    .col-md-3 {
+        width: 33%;
     }
     .category {
         display: none;
@@ -1693,7 +1693,7 @@ screen and (max-width: 450px) {
 
 @media only screen and (min-width:801px) and (max-width: 1024px) {
     body>.navbar {
-        padding: 0 1%;
+        padding: 1%;
     }
     #nav li a {
         padding: 0;
@@ -1715,10 +1715,13 @@ screen and (max-width: 450px) {
     }
 }
 
-@media only screen and (min-width:1025px) and (max-width: 1200px) {
+@media only screen and (min-width:1025px) and (max-width: 1215px) {
     .logo img {
         width: 150px;
         margin-bottom: 10px;
+    }
+    body>.navbar {
+        padding: 0 7%
     }
     #nav li a {
         padding: 0 3px;
@@ -1726,7 +1729,7 @@ screen and (max-width: 450px) {
     }
 }
 
-@media only screen and (min-width:1201px) and (max-width: 1565px) {
+@media only screen and (min-width:1216px) and (max-width: 1565px) {
     .logo img {
         width: 200px;
         margin-bottom: 10px;

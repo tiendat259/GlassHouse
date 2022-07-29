@@ -117,7 +117,7 @@ p {
     display: block;
     color: #000;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 #nav>li:hover>a {
@@ -1323,7 +1323,6 @@ screen and (max-width: 450px) {
     }
     .button-cart {
         width: 130px;
-        margin-left: 20px;
     }
     #nav .subnav .child-subnav {
         display: block;
@@ -1423,9 +1422,14 @@ screen and (max-width: 450px) {
 @media only screen and (min-width:801px) and (max-width: 1024px) {
     .logo img {
         width: 125px;
+        margin-bottom: 5;
+    }
+    #nav {
+        line-height: 0;
+        padding-left: 0;
     }
     body>.navbar {
-        padding: 0 1%;
+        padding: 1%;
     }
     #nav li a {
         padding: 0;
@@ -1445,7 +1449,7 @@ screen and (max-width: 450px) {
         margin-bottom: 7px;
     }
     body>.navbar {
-        padding: 0 5%;
+        padding: 0 3%;
     }
     #nav li a {
         padding: 0 3px;

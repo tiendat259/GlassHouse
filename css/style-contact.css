@@ -33,6 +33,10 @@ body>.navbar {
     z-index: 3;
 }
 
+#nav {
+    padding-left: 0;
+}
+
 nav {
     line-height: 60px;
     flex: 1;
@@ -116,7 +120,7 @@ p {
     display: block;
     color: #000;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 #nav>li:hover>a {
@@ -1309,7 +1313,6 @@ screen and (max-width: 450px) {
     }
     .button-cart {
         width: 130px;
-        margin-left: 20px;
     }
     #nav .subnav .child-subnav {
         display: block;
@@ -1405,7 +1408,7 @@ screen and (max-width: 450px) {
         margin-bottom: 10px;
     }
     body>.navbar {
-        padding: 0 7%;
+        padding: 0 5%;
     }
     #nav li a {
         padding: 0 3px;
@@ -1417,6 +1420,9 @@ screen and (max-width: 450px) {
     .logo img {
         width: 250px;
         margin-bottom: 10px;
+    }
+    body>.navbar {
+        padding: 0 7%;
     }
     #nav li a {
         padding: 0 10px;

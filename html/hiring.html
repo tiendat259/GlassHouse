@@ -85,6 +85,9 @@
                 <li>
                     <a href="cart.html " class="button-cart "><i class="fa fa-shopping-cart " style="font-size: 16px; "></i></a>
                 </li>
+                <li>
+                    <a href="../html/DangNhap.html"><i class="fa fa-user"></i></a>
+                </li>
             </ul>
         </nav>
         <img src="../img-glass-house/img-logo/menu.png " class="menu-icon " onclick="menutoggle() ">
@@ -203,7 +206,7 @@
     </div>
     </div>
     <!------- footer --------->
-    <div id="footer ">
+    <div id="footer">
         <div class="container ">
             <div class="row ">
                 <div class="col-sm-4 ">
@@ -398,21 +401,21 @@
         }
     </script>
     <script>
-        var MenuItems = document.getElementById("nav ")
+        var MenuItems = document.getElementById("nav")
 
-        MenuItems.style.maxHeight = "0px "
+        MenuItems.style.maxHeight = "0px"
 
         function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px ") {
-                MenuItems.style.maxHeight = "300px "
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px"
             } else {
-                MenuItems.style.maxHeight = "0px "
+                MenuItems.style.maxHeight = "0px"
             }
         }
     </script>
     <script>
         function showChatbox() {
-            var x = document.getElementById("chatbox ");
+            var x = document.getElementById("chatbox");
             if (x.style.display === "block ") {
                 x.style.display = "none ";
             } else {

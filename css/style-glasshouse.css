@@ -33,7 +33,7 @@ body>.navbar {
 }
 
 nav {
-    line-height: 60px;
+    /* line-height: 60px; */
     flex: 1;
     text-align: right;
 }
@@ -64,6 +64,7 @@ p {
 }
 
 .logo img {
+    width: 250px;
     margin-bottom: 10px;
 }
 
@@ -1701,7 +1702,6 @@ screen and (max-width: 450px) {
     }
     .button-cart {
         width: 130px;
-        margin-left: 20px;
     }
     #nav .subnav .child-subnav {
         display: block;
@@ -1903,9 +1903,10 @@ screen and (max-width: 450px) {
     .logo img {
         width: 125px;
         margin-bottom: 7px;
+        padding-right: 10px;
     }
     body>.navbar {
-        padding: 0 0% 0 3%;
+        padding: 1%;
     }
     #nav li a {
         padding: 0;
@@ -1993,7 +1994,7 @@ screen and (max-width: 450px) {
 }
 
 @media only screen and (min-width:1201px) and (max-width: 1450px) {
-    .img-logo {
+    .logo img {
         width: 200px;
         margin-bottom: 7px;
     }
@@ -2028,7 +2029,7 @@ screen and (max-width: 450px) {
 }
 
 @media only screen and (min-width:1451px) and (max-width: 1650px) {
-    .img-logo {
+    .logo img {
         width: 250px;
     }
     body>.navbar {
@@ -2036,5 +2037,14 @@ screen and (max-width: 450px) {
     }
     #nav li a {
         padding: 0 3px;
+    }
+}
+
+@media only screen and (min-width: 1650px) and (max-width: 1770px) {
+    .logo img {
+        width: 250px;
+    }
+    #nav li a {
+        padding: 0 15px;
     }
 }
