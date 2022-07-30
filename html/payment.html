@@ -117,70 +117,118 @@
                     <div class="columns-labels">
                         <label class="product-details"> Thông tin</label>
                         <label class="address column-mobile">Địa chỉ</label>
-                        <label class="product-removal column-mobile"><a href="">Thao tác</a></label>
+                        <label class="product-removal column-mobile">Thao tác</label>
                     </div>
                     <div class="product">
                         <div class="product-details">
-                            <div class="product-title">Lê Duy Ngọc</div>
-                            <p class="product-description">09123456789</p>
+                            <div class="product-title">Ngô Tiến Đạt</div>
+                            <p class="product-description">(+84) 912345678</p>
                         </div>
                         <div class="address">
                             <div class="product-description">Số 242 Cổ Bi, Gia Lâm, Hà Nội.</div>
                         </div>
                         <div class="product-removal center-input ">
-                            <a href="product-info-customer.html" style="color: #c66; font-weight: 800;"> Thay đổi</a>
+                            <a href="#change__address" class="window__change" style="color: #c66; font-weight: 800;"> Thay đổi</a>
+                        </div>
+                    </div>
+                    <div id="change__address">
+                        <div class="form__address" id="form__address">
+                            <h3 class="title__change__add">Địa chỉ của tôi</h3>
+                            <div class="info__address">
+                                <input type="radio" name="" id=""> <span><strong> Ngô Tiến Đạt</strong> | (+84) 912345678</span>
+                                <a href="#change__address" style="float: right;color:#0183F1" onclick="change__address()">Cập nhật</a>
+                                <p class="add__info">242 <br>Xã Cổ Bi, Huyện Gia Lâm, Hà Nội</p>
+                                <p class="add__arrive">Địa chỉ lấy hàng</p>
+
+                                <p class="add__address">
+                                    <a href="#change__address" onclick="add__address()"><i class="fa fa-plus"></i> Thêm địa chỉ mới</a>
+                                </p>
+                            </div>
+                            <div class="button__confirm">
+                                <a href="" class="confirm">Xác nhận</a>
+                                <a href="#" class="close__btn">Hủy</a>
+                            </div>
+                        </div>
+                        <div class="form__change" id="form__change">
+                            <h3 class="title__change__add">Cập nhật địa chỉ</h3>
+                            <div class="fill-info">
+                                <input type="text" name="" id="" placeholder="Họ và tên" style="width:45%;margin-right: 47px;">
+                                <input type="text" name="" id="" placeholder="Số điện thoại" style="width:45%">
+                                <input type="text" name="" id="" placeholder="Tỉnh/ Thành phố, Quận/Huyện, Phường/Xã">
+                                <input type="text" name="" id="" placeholder="Địa chỉ cụ thể" style="height: 100px;">
+                                <span class="check__address">Nhà riêng</span> <span class="check__address">Công trình xây dựng</span>
+                            </div>
+                            <div class="button__confirm">
+                                <a href="" class="confirm">Xác nhận</a>
+                                <a href="#change__address" class="cancel" onclick="cancel__change__address()">Trở lại </a>
+                            </div>
+                        </div>
+                        <div class="form__add__address" id="form__add__address">
+                            <h3 class="title__change__add">Địa chỉ mới</h3>
+                            <div class="fill-info">
+                                <input type="text" name="" id="" placeholder="Họ và tên" style="width:45%;margin-right: 47px;">
+                                <input type="text" name="" id="" placeholder="Số điện thoại" style="width:45%">
+                                <input type="text" name="" id="" placeholder="Tỉnh/ Thành phố, Quận/Huyện, Phường/Xã">
+                                <input type="text" name="" id="" placeholder="Địa chỉ cụ thể" style="height: 100px;">
+                                <p>Loại địa chỉ: </p>
+                                <span class="check__address">Nhà riêng</span> <span class="check__address">Công trình xây dựng</span>
+                            </div>
+                            <div class="button__confirm">
+                                <a href="" class="confirm">Xác nhận</a>
+                                <a href="#change__address" class="cancel" onclick="cancel__add__address()">Trở lại</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column-labels">
-            <label class="product-image" style="text-align: center;">Sản phẩm</label>
-            <label class="product-details">Tên sản phẩm</label>
-            <label class="product-type">Phân loại hàng</label>
-            <label class="product-price">Giá</label>
-            <label class="product-quantity">Số lượng</label>
-            <label class="product-line-price">Tổng tiền</label>
+        <div class=" column-labels ">
+            <label class="product-image " style="text-align: center; ">Sản phẩm</label>
+            <label class="product-details ">Tên sản phẩm</label>
+            <label class="product-type ">Phân loại hàng</label>
+            <label class="product-price ">Giá</label>
+            <label class="product-quantity ">Số lượng</label>
+            <label class="product-line-price ">Tổng tiền</label>
         </div>
 
-        <div class="product">
-            <div class="product-image">
-                <img src="../img-glass-house/img-product/CDMC/CDMC-5.png">
+        <div class="product ">
+            <div class="product-image ">
+                <img src="../img-glass-house/img-product/CDMC/CDMC-5.png ">
             </div>
-            <div class="product-details">
-                <div class="product-title">Cửa đi một cánh</div>
-                <p class="product-description product-content">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K.</p>
+            <div class="product-details ">
+                <div class="product-title ">Cửa đi một cánh</div>
+                <p class="product-description product-content ">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K.</p>
             </div>
-            <div class="product-type">
-                <div class="product-title">Loại nhôm: <strong>Xingfa</strong></div>
-                <p class="product-description">Màu sắc: <strong>Ghi Xám</strong></p>
-                <p class="product-description">Phụ kiện: <strong>Kinlong</strong></p>
-                <p class="product-description">Loại kính: <strong>Kính dán</strong></p>
+            <div class="product-type ">
+                <div class="product-title ">Loại nhôm: <strong>Xingfa</strong></div>
+                <p class="product-description ">Màu sắc: <strong>Ghi Xám</strong></p>
+                <p class="product-description ">Phụ kiện: <strong>Kinlong</strong></p>
+                <p class="product-description ">Loại kính: <strong>Kính dán</strong></p>
             </div>
             <div class="product-price ">10.000.000 VNĐ</div>
             <div class="product-quantity center-input ">
-                <p class="product-description product-number">2</p>
+                <p class="product-description product-number ">2</p>
             </div>
             <div class="product-line-price ">20.000.000 VNĐ</div>
         </div>
 
         <div class="product ">
             <div class="product-image ">
-                <img src="../img-glass-house/img-product/CDMC-Fix/img-CDMC-Fix-1.jpg">
+                <img src="../img-glass-house/img-product/CDMC-Fix/img-CDMC-Fix-1.jpg ">
             </div>
             <div class="product-details ">
                 <div class="product-title ">Cửa đi một cánh kèm Fix</div>
-                <p class="product-description product-content">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K.</p>
+                <p class="product-description product-content ">Phiên bản ngắt nhiệt của FN52W và FN52D nhằm nâng cao hiệu suất cách nhiệt với giá trị U là 2,4W / m2-K.</p>
             </div>
             <div class="product-type ">
-                <div class="product-title">Loại nhôm: <strong>Xingfa</strong></div>
-                <p class="product-description">Màu sắc: <strong>Ghi Xám</strong></p>
-                <p class="product-description">Phụ kiện: <strong>Kinlong</strong></p>
-                <p class="product-description">Loại kính: <strong>Kính dán</strong></p>
+                <div class="product-title ">Loại nhôm: <strong>Xingfa</strong></div>
+                <p class="product-description ">Màu sắc: <strong>Ghi Xám</strong></p>
+                <p class="product-description ">Phụ kiện: <strong>Kinlong</strong></p>
+                <p class="product-description ">Loại kính: <strong>Kính dán</strong></p>
             </div>
             <div class="product-price ">10.000.000 VNĐ</div>
             <div class="product-quantity center-input ">
-                <p class="product-description product-number">1</p>
+                <p class="product-description product-number ">1</p>
             </div>
             <div class="product-line-price ">10.000.000 VNĐ</div>
         </div>
@@ -199,135 +247,135 @@
                 <div class="totals-value " id="cart-total ">33.200.000 VNĐ</div>
             </div>
         </div>
-        <div class="choose-banking">
+        <div class="choose-banking ">
 
         </div>
-        <button class="checkout" onclick="someFunc()">Thanh Toán</button>
+        <button class="checkout " onclick="someFunc() ">Thanh Toán</button>
     </div>
     <div id="back-to-index">
-        <div class="payment-content">
-            <img src="../img-glass-house/tick-xanh.png" alt="">
+        <div class="payment-content ">
+            <img src="../img-glass-house/tick-xanh.png " alt=" ">
             <h1>Cảm ơn bạn đã thanh toán</h1>
-            <h3 style="padding-bottom: 30px;">Sau 5 giây hệ thống sẽ tự động trở về trang chủ</h3>
-            <button class="btn btn-primary" style="margin-bottom:30px" onclick="window.location='index.html'">Trở về trang chủ</button>
+            <h3 style="padding-bottom: 30px; ">Sau 5 giây hệ thống sẽ tự động trở về trang chủ</h3>
+            <button class="btn btn-primary " style="margin-bottom:30px " onclick="window.location='index.html' ">Trở về trang chủ</button>
         </div>
     </div>
     <!------- footer --------->
     <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="footer-img">
-                        <img src="../img-glass-house/img-logo/logo.png" alt="Glasshouse">
-                        <i>"Đưa phong cách Châu Âu đến với ngôi nhà của bạn"</i>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-4 ">
+                    <div class="footer-img ">
+                        <img src="../img-glass-house/img-logo/logo.png " alt="Glasshouse ">
+                        <i>"Đưa phong cách Châu Âu đến với ngôi nhà của bạn "</i>
                     </div>
                     <ul>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:glasshouse.vn@gmail.com"> Glasshouse.vn@gmail.com</a></li>
-                        <li><i class="fa fa-map-marker"> </i> Showroom: Nguyệt Quế 25-20, KĐT Vinhomes Riverside The Harmony, Long Biên, Hà Nội.</li>
-                        <li><i class="fa fa-phone-alt"></i><a href="tel:+84981961668">0981 961 668</a></li>
-                        <li><i class="fa fa-map-marker"></i> NMSX: 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
-                        <li><i class="fa fa-phone-alt"></i><a href="tel:+84981961668"> 0981 961 668</a></li>
+                        <li><i class="fa fa-envelope "></i><a href="mailto:glasshouse.vn@gmail.com "> Glasshouse.vn@gmail.com</a></li>
+                        <li><i class="fa fa-map-marker "> </i> Showroom: Nguyệt Quế 25-20, KĐT Vinhomes Riverside The Harmony, Long Biên, Hà Nội.</li>
+                        <li><i class="fa fa-phone-alt "></i><a href="tel:+84981961668 ">0981 961 668</a></li>
+                        <li><i class="fa fa-map-marker "></i> NMSX: 242 Cổ Bi, Gia Lâm, Hà Nội.</li>
+                        <li><i class="fa fa-phone-alt "></i><a href="tel:+84981961668 "> 0981 961 668</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
-                    <div class="footer-title">Giới thiệu</div>
+                <div class="col-sm-2 ">
+                    <div class="footer-title ">Giới thiệu</div>
                     <ul>
                         <li>
-                            <a href="introduce.html">Giới thiệu</a> </li>
+                            <a href="introduce.html ">Giới thiệu</a> </li>
                         <li>
-                            <a href="introduce.html">Tầm nhìn</a> </li>
+                            <a href="introduce.html ">Tầm nhìn</a> </li>
                         <li>
-                            <a href="introduce.html">Sứ mệnh</a> </li>
+                            <a href="introduce.html ">Sứ mệnh</a> </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
-                    <div class="footer-title">Sản phẩm</div>
+                <div class="col-sm-2 ">
+                    <div class="footer-title ">Sản phẩm</div>
                     <ul>
                         <li>
-                            <a href="../html/product-CD1C.html">Cửa đi một cánh</a>
+                            <a href="../html/product-CD1C.html ">Cửa đi một cánh</a>
                         </li>
                         <li>
-                            <a href="../html/product-CD1C-fix.html">Cửa đi một cánh và Fix</a>
+                            <a href="../html/product-CD1C-fix.html ">Cửa đi một cánh và Fix</a>
                         </li>
                         <li>
-                            <a href="../html/product-CDNC.html">Cửa đi nhiều cánh</a>
+                            <a href="../html/product-CDNC.html ">Cửa đi nhiều cánh</a>
                         </li>
                         <li>
-                            <a href="../html/product-CL.html">Cửa lùa</a>
+                            <a href="../html/product-CL.html ">Cửa lùa</a>
                         </li>
                         <li>
-                            <a href="../html/product-CSMQ.html">Cửa sổ mở quay</a>
+                            <a href="../html/product-CSMQ.html ">Cửa sổ mở quay</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
-                    <div class="footer-title">Công trình</div>
+                <div class="col-sm-2 ">
+                    <div class="footer-title ">Công trình</div>
                     <ul>
                         <li>
-                            <a href="project-BT.html">Biệt thự</a>
+                            <a href="project-BT.html ">Biệt thự</a>
                         </li>
                         <li>
-                            <a href="project-BT.html">Nhà phố</a>
+                            <a href="project-BT.html ">Nhà phố</a>
                         </li>
                         <li>
-                            <a href="project-BT.html">Khách sạn</a>
+                            <a href="project-BT.html ">Khách sạn</a>
                         </li>
                         <li>
-                            <a href="project-BT.html">Dự án</a>
+                            <a href="project-BT.html ">Dự án</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
-                    <div class="footer-title">Tuyển Dụng</div>
+                <div class="col-sm-2 ">
+                    <div class="footer-title ">Tuyển Dụng</div>
                     <ul>
-                        <li><a href="hiring.html"> Văn hóa Glasshouse</a></li>
+                        <li><a href="hiring.html "> Văn hóa Glasshouse</a></li>
                         <li>
-                            <a href="hiring.html"> Thông tin tuyển dụng</a></li>
+                            <a href="hiring.html "> Thông tin tuyển dụng</a></li>
                     </ul>
                 </div>
-                <div class="copyright">
-                    <p>© Copyright 2022 <a href="index.html" style="color: #0183F1;"> Glasshouse, JSC</a></p>
+                <div class="copyright ">
+                    <p>© Copyright 2022 <a href="index.html " style="color: #0183F1; "> Glasshouse, JSC</a></p>
                 </div>
             </div>
         </div>
 
     </div>
-    <div class="ring">
-        <a href="tel:+84981961668">
-            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
-                <div class="coccoc-alo-ph-circle"></div>
-                <div class="coccoc-alo-ph-circle-fill"></div>
-                <div class="coccoc-alo-ph-img-circle"></div>
+    <div class="ring ">
+        <a href="tel:+84981961668 ">
+            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show ">
+                <div class="coccoc-alo-ph-circle "></div>
+                <div class="coccoc-alo-ph-circle-fill "></div>
+                <div class="coccoc-alo-ph-img-circle "></div>
             </div>
         </a>
     </div>
-    <div class="chatbox-icon" onclick="showChatbox()" style="cursor: pointer;">
-        <img src="../img-glass-house/img-logo/chat.png" alt="" style="border-radius: 50%;background-color: #fff;">
+    <div class="chatbox-icon " onclick="showChatbox() " style="cursor: pointer; ">
+        <img src="../img-glass-house/img-logo/chat.png " alt=" " style="border-radius: 50%;background-color: #fff; ">
     </div>
-    <section class="avenue-messenger" id="chatbox">
-        <div class="menu">
-            <div class="button-close" onclick="endChatbox()">&#10005;</div>
+    <section class="avenue-messenger " id="chatbox ">
+        <div class="menu ">
+            <div class="button-close " onclick="endChatbox() ">&#10005;</div>
         </div>
-        <div class="agent-face">
-            <div class="half">
-                <img class="agent circle" src="../img-glass-house/img-logo/logo-nen-trang-GH.png " width="60px" height="60px" alt="Glasshouse"></div>
+        <div class="agent-face ">
+            <div class="half ">
+                <img class="agent circle " src="../img-glass-house/img-logo/logo-nen-trang-GH.png " width="60px " height="60px " alt="Glasshouse "></div>
         </div>
-        <div class="chat">
-            <div class="chat-title">
+        <div class="chat ">
+            <div class="chat-title ">
                 <h1>Glasshouse</h1>
                 <h2>Vui lòng chia sẻ mọi thắc mắc hoặc phản hồi của bạn.</h2>
             </div>
-            <div class="messages">
-                <div class="messages-content"></div>
+            <div class="messages ">
+                <div class="messages-content "></div>
             </div>
-            <div class="message-box">
-                <textarea type="text" class="message-input" placeholder="Nhập câu trả lời..."></textarea>
-                <button type="submit" class="message-submit">Gửi</button>
+            <div class="message-box ">
+                <textarea type="text " class="message-input " placeholder="Nhập câu trả lời... "></textarea>
+                <button type="submit " class="message-submit ">Gửi</button>
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js "></script>
     <script>
         var $messages = $('.messages-content'),
             d, h, m,
@@ -341,7 +389,7 @@
         });
 
         function updateScrollbar() {
-            $messages.mCustomScrollbar("update").mCustomScrollbar('scrollTo', 'bottom', {
+            $messages.mCustomScrollbar("update ").mCustomScrollbar('scrollTo', 'bottom', {
                 scrollInertia: 10,
                 timeout: 0
             });
@@ -351,9 +399,9 @@
             d = new Date()
             if (m != d.getMinutes()) {
                 m = d.getMinutes();
-                $('<div class="timestamp">' + d.getHours() + ':' + m + '</div>').appendTo($('.message:last'));
-                $('<div class="checkmark-sent-delivered">&check;</div>').appendTo($('.message:last'));
-                $('<div class="checkmark-read">&check;</div>').appendTo($('.message:last'));
+                $('<div class="timestamp ">' + d.getHours() + ':' + m + '</div>').appendTo($('.message:last'));
+                $('<div class="checkmark-sent-delivered ">&check;</div>').appendTo($('.message:last'));
+                $('<div class="checkmark-read ">&check;</div>').appendTo($('.message:last'));
             }
         }
 
@@ -362,7 +410,7 @@
             if ($.trim(msg) == '') {
                 return false;
             }
-            $('<div class="message message-personal">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
+            $('<div class="message message-personal ">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
             setDate();
             $('.message-input').val(null);
             updateScrollbar();
@@ -394,12 +442,12 @@
             if ($('.message-input').val() != '') {
                 return false;
             }
-            $('<div class="message loading new"><figure class="avatar"><img src="../img-glass-house/img-logo/logo-nen-trang-GH.png " /></figure><span></span></div>').appendTo($('.mCSB_container'));
+            $('<div class="message loading new "><figure class="avatar "><img src="../img-glass-house/img-logo/logo-nen-trang-GH.png " /></figure><span></span></div>').appendTo($('.mCSB_container'));
             updateScrollbar();
 
             setTimeout(function() {
                 $('.message.loading').remove();
-                $('<div class="message new"><figure class="avatar"><img src="../img-glass-house/img-logo/logo-nen-trang-GH.png " /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+                $('<div class="message new "><figure class="avatar "><img src="../img-glass-house/img-logo/logo-nen-trang-GH.png " /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
                 setDate();
                 updateScrollbar();
                 i++;
@@ -408,34 +456,34 @@
         }
     </script>
     <script>
-        var MenuItems = document.getElementById("nav")
+        var MenuItems = document.getElementById("nav ")
 
-        MenuItems.style.maxHeight = "0px"
+        MenuItems.style.maxHeight = "0px "
 
         function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "300px"
+            if (MenuItems.style.maxHeight == "0px ") {
+                MenuItems.style.maxHeight = "300px "
             } else {
-                MenuItems.style.maxHeight = "0px"
+                MenuItems.style.maxHeight = "0px "
             }
         }
     </script>
     <script>
         function showChatbox() {
-            var x = document.getElementById("chatbox");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+            var x = document.getElementById("chatbox ");
+            if (x.style.display === "block ") {
+                x.style.display = "none ";
             } else {
-                x.style.display = "block";
+                x.style.display = "block ";
             }
         }
 
         function endChatbox() {
-            var x = document.getElementById("chatbox");
-            if (x.style.display === "none") {
-                x.style.display = "block";
+            var x = document.getElementById("chatbox ");
+            if (x.style.display === "none ") {
+                x.style.display = "block ";
             } else {
-                x.style.display = "none";
+                x.style.display = "none ";
             }
         }
     </script>
@@ -517,8 +565,28 @@
         }
 
         function payment() {
-            document.getElementById("shopping-cart").style.display = "none";
-            document.getElementById("back-to-index").style.display = "block"
+            document.getElementById("shopping-cart ").style.display = "none ";
+            document.getElementById("back-to-index ").style.display = "block "
+        }
+
+        function change__address() {
+            document.getElementById("form__address").style.display = "none ";
+            document.getElementById("form__change").style.display = "block "
+        }
+
+        function add__address() {
+            document.getElementById("form__address").style.display = "none ";
+            document.getElementById("form__add__address").style.display = "block "
+        }
+
+        function cancel__change__address() {
+            document.getElementById("form__change").style.display = "none ";
+            document.getElementById("form__address").style.display = "block "
+        }
+
+        function cancel__add__address() {
+            document.getElementById("form__add__address").style.display = "none ";
+            document.getElementById("form__address").style.display = "block "
         }
     </script>
     <script>
@@ -528,15 +596,40 @@
         function someFunc() {
             payment();
             setTimeout(function() {
-                window.location = "index.html";
+                window.location = "index.html ";
             }, 5000);
-
         }
     </script>
 
     <script src="../function.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    <script>
+        $(document).ready(function() {
+            $('a.window__change').click(function() {
+
+                //lấy giá trị thuộc tính href - chính là phần tử "#change__add"
+                var changeAddBox = $(this).attr('href');
+
+                //cho hiện hộp đăng nhập trong 300ms
+                $(changeAddBox).fadeIn("slow");
+
+                // thêm phần tử id="over" vào sau body
+                $('body').append('<div id="over"></div>');
+                $('#over').fadeIn(300);
+                return false;
+            });
+
+            // khi click đóng hộp thoại
+            $(document).on('click', "a.close__btn, #over", function() {
+                $('#over, #change__address').fadeOut(300, function() {
+                    $('#over').remove();
+                });
+                return false;
+            });
+
+        });
+    </script>
 </body>
 
 </html>

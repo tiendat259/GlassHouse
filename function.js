@@ -114,13 +114,3 @@ function checkinfo() {
 
     }
 }
-
-
-function datatransfer() {
-    var x = document.getElementById("form-1");
-    var y = document.getElementById("form-2");
-    x.style.display = "none";
-    y.style.display = "block"
-    var alu = document.getElementById('select-alu').value;
-    document.getElementById('type').innerHTML = alu;
-}

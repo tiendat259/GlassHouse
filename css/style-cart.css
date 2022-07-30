@@ -281,6 +281,146 @@
         background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
     }
     
+    #change__address {
+        width: 500px;
+        height: 600px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        display: none;
+        z-index: 99999;
+        overflow: hidden;
+        position: absolute;
+        left: 500px;
+        top: -100px;
+        padding: 10px;
+    }
+    
+    .title__change__add {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .info__address {
+        padding: 10px 20px
+    }
+    
+    .add__info,
+    .add__arrive {
+        padding-left: 20px;
+        color: #0000008A;
+    }
+    
+    .add__arrive {
+        border: 1px solid #0000008A;
+        width: 140px;
+    }
+    
+    #change__address span,
+    #change__address a,
+    #change__address p {
+        font-size: 16px;
+    }
+    
+    .add__address {
+        border: 1px solid rgba(0, 0, 0, .09);
+        padding: 5px 20px;
+        width: 180px;
+    }
+    
+    .add__address a {
+        font-size: 18px;
+    }
+    
+    .address {
+        float: left;
+        width: 71%;
+    }
+    
+    #over {
+        display: none;
+        background: #000;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        z-index: 999;
+    }
+    
+    #change__address input[type=text] {
+        height: 38px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        flex: 1;
+        outline: none;
+        font-size: 14px;
+        min-width: 0;
+        color: #222;
+        border: 0;
+        float: left;
+        margin-bottom: 10px;
+        border: 1px solid#ccc;
+        border-radius: 2px;
+    }
+    
+    .check__address {
+        padding: 5px 20px;
+        border: 1px solid #ccc
+    }
+    
+    .check__address:focus-visible {
+        border: 2px solid #0183F1;
+    }
+    
+    .fill-info {
+        padding-top: 30px;
+    }
+    
+    .form__change {
+        display: none;
+    }
+    
+    .form__add__address {
+        display: none;
+    }
+    
+    #change__address input[type=text]:focus-visible {
+        border: 2px solid #000;
+        border-radius: 2px;
+    }
+    
+    .button__confirm {
+        position: absolute;
+        bottom: 40px;
+        padding-left: 30px;
+    }
+    
+    .confirm,
+    .cancel,
+    .close__btn {
+        padding: 5px 20px;
+    }
+    
+    .confirm {
+        background-color: #0183F1;
+        border-radius: 2px;
+    }
+    
+    .confirm:hover {
+        color: #fff;
+    }
+    
+    .cancel:hover,
+    .close__btn:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+    
     .product-image {
         float: left;
         width: 20%;
@@ -309,11 +449,6 @@
     .product-removal {
         float: left;
         width: 9%;
-    }
-    
-    .address {
-        float: left;
-        width: 71%;
     }
     
     .product-line-price {
