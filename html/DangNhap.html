@@ -8,6 +8,7 @@
     <title>Đăng nhập</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="shortcut icon" href="../img-glass-house/img-logo/logo-khong-nen-GH.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style-login.css">
     <style></style>
 </head>
@@ -41,27 +42,35 @@
                 <span>hoặc sử dụng tài khoản của bạn</span>
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Mật khẩu" />
-                <a href="#">Quên mật khẩu?</a>
+                <a href="#forget__account" onclick="forget__account()" class="forget__button">Quên mật khẩu?</a>
                 <button>Đăng nhập</button>
             </form>
         </div>
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <img src="../img-glass-house/img-logo/l2.jpg" alt="">
+                    <img src="../img-glass-house/img-logo/logoHD-GH.png" alt="">
                     <h1>Xin chào!</h1>
                     <p>Để nhận nhiều thông tin hơn về sản phẩm của Glasshouse, Xin vui lòng đăng ký tài khoản cá nhân!</p>
                     <button class="ghost" id="signIn">Đăng Nhập</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <img src="../img-glass-house/img-logo/l2.jpg" alt="">
+                    <img src="../img-glass-house/img-logo/logoHD-GH.png" alt="">
                     <h1>Xin chào!</h1>
                     <p>Nhập thông tin của bạn và sẵn sàng để trải nghiệm cùng Glasshoue nào!</p>
                     <button class="ghost" id="signUp">Đăng ký</button>
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="forget__account" id="forget__account">
+        <h3>Khôi phục khoản của bạn</h3>
+        <p>Vui lòng nhập Gmail hoặc số điện thoại để khôi phục tài khoản của bạn</p>
+        <input type="text" name="" id="username" placeholder="Gmail hoặc số điện thoại">
+        <div class="button__forget__account">
+            <button type="submit" class="btn-cancel " onclick="cancel__forget__account()">Hủy</button>
+            <button type="submit" class="btn btn-primary ">Xác nhận</button>
+        </div>
     </div>
     <h3 style="margin-top:30px">
         <a href="../html/index.html " class="back__index">Trang chủ <i class="fa fa-arrow-right "></i></a>
@@ -77,6 +86,43 @@
 
         signInButton.addEventListener('click', () => {
             container.classList.remove("right-panel-active");
+        });
+    </script>
+    <script>
+        function forget__account() {
+            document.getElementById("container").style.display = "none";
+            document.getElementById("forget__account").style.display = "block"
+        }
+
+        function cancel__forget__account() {
+            document.getElementById("forget__account").style.display = "none";
+            document.getElementById("container").style.display = "block"
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('a.forget__button').click(function() {
+
+                //lấy giá trị thuộc tính href - chính là phần tử "#change__add"
+                var changeAddBox = $(this).attr('href');
+
+                //cho hiện hộp đăng nhập trong 300ms
+                $(changeAddBox).fadeIn("slow");
+
+                // thêm phần tử id="over" vào sau body
+                $('body').append('<div id="over"></div>');
+                $('#over').fadeIn(300);
+                return false;
+            });
+
+            // khi click đóng hộp thoại
+            $(document).on('click', "a.close__btn, #over", function() {
+                $('#over, #forget__account').fadeOut(300, function() {
+                    $('#over').remove();
+                });
+                return false;
+            });
+
         });
     </script>
 </body>
