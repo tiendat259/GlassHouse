@@ -479,36 +479,36 @@
 
     </div>
     <div class="ring ">
-        <a href="tel:+84981961668 ">
-            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show ">
-                <div class="coccoc-alo-ph-circle "></div>
-                <div class="coccoc-alo-ph-circle-fill "></div>
-                <div class="coccoc-alo-ph-img-circle "></div>
+        <a href="tel:+84981961668">
+            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+                <div class="coccoc-alo-ph-circle"></div>
+                <div class="coccoc-alo-ph-circle-fill"></div>
+                <div class="coccoc-alo-ph-img-circle"></div>
             </div>
         </a>
     </div>
-    <div class="chatbox-icon " onclick="showChatbox() " style="cursor: pointer; ">
-        <img src="../img-glass-house/img-logo/chat.png " alt=" " style="border-radius: 50%;background-color: #fff; ">
+    <div class="chatbox-icon" onclick="showChatbox()" style="cursor: pointer;">
+        <img src="../img-glass-house/img-logo/chat.png" alt=" " style="border-radius: 50%;background-color: #fff;">
     </div>
-    <section class="avenue-messenger " id="chatbox ">
-        <div class="menu ">
-            <div class="button-close " onclick="endChatbox() ">&#10005;</div>
+    <section class="avenue-messenger" id="chatbox">
+        <div class="menu">
+            <div class="button-close" onclick="endChatbox()">&#10005;</div>
         </div>
-        <div class="agent-face ">
-            <div class="half ">
-                <img class="agent circle " src="../img-glass-house/img-logo/logo-nen-trang-GH.png " width="60px " height="60px " alt="Glasshouse "></div>
+        <div class="agent-face">
+            <div class="half">
+                <img class="agent circle" src="../img-glass-house/img-logo/logo-nen-trang-GH.png" width="60px" height="60px" alt="Glasshouse"></div>
         </div>
-        <div class="chat ">
-            <div class="chat-title ">
+        <div class="chat">
+            <div class="chat-title">
                 <h1>Glasshouse</h1>
                 <h2>Vui lòng chia sẻ mọi thắc mắc hoặc phản hồi của bạn.</h2>
             </div>
-            <div class="messages ">
-                <div class="messages-content "></div>
+            <div class="messages">
+                <div class="messages-content"></div>
             </div>
-            <div class="message-box ">
-                <textarea type="text " class="message-input " placeholder="Nhập câu trả lời... "></textarea>
-                <button type="submit " class="message-submit ">Gửi</button>
+            <div class="message-box">
+                <textarea type="text" class="message-input" placeholder="Nhập câu trả lời..."></textarea>
+                <button type="submit" class="message-submit">Gửi</button>
             </div>
         </div>
     </section>
@@ -527,7 +527,7 @@
         });
 
         function updateScrollbar() {
-            $messages.mCustomScrollbar("update ").mCustomScrollbar('scrollTo', 'bottom', {
+            $messages.mCustomScrollbar("update").mCustomScrollbar('scrollTo', 'bottom', {
                 scrollInertia: 10,
                 timeout: 0
             });
@@ -537,8 +537,8 @@
             d = new Date()
             if (m != d.getMinutes()) {
                 m = d.getMinutes();
-                $('<div class="timestamp ">' + d.getHours() + ':' + m + '</div>').appendTo($('.message:last'));
-                $('<div class="checkmark-sent-delivered ">&check;</div>').appendTo($('.message:last'));
+                $('<div class="timestamp">' + d.getHours() + ':' + m + '</div>').appendTo($('.message:last'));
+                $('<div class="checkmark-sent-delivered">&check;</div>').appendTo($('.message:last'));
                 $('<div class="checkmark-read ">&check;</div>').appendTo($('.message:last'));
             }
         }
@@ -548,7 +548,7 @@
             if ($.trim(msg) == '') {
                 return false;
             }
-            $('<div class="message message-personal ">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
+            $('<div class="message message-personal">' + msg + '</div>').appendTo($('.mCSB_container')).addClass('new');
             setDate();
             $('.message-input').val(null);
             updateScrollbar();
