@@ -10,7 +10,7 @@ a:hover {
 }
 
 html {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 body {
@@ -299,7 +299,7 @@ a:hover {
 }
 
 .columns span {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .columns hr {
@@ -621,22 +621,37 @@ a:hover {
 
 #partner {
     width: 80%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 40px auto;
 }
 
 .partner-logo-1 img {
     width: 150px;
     margin: 0 auto;
+    filter: grayscale(100);
+    padding: 0 10px;
+    border: 1px solid #ccc;
 }
 
 .partner-logo-1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+.partner-logo-1 img:hover {
+    filter: grayscale(0);
 }
 
 .partner-logo-2 img {
     width: 150px;
     margin: 0 auto;
+    filter: grayscale(100);
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.partner-logo-2 img:hover {
+    filter: grayscale(0);
 }
 
 .partner-logo-2 {
@@ -1667,7 +1682,7 @@ screen and (max-width: 450px) {
         position: absolute;
         top: 70px;
         left: 0;
-        background: #ccc;
+        background-color: rgba(243, 244, 246, 1);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -1711,7 +1726,7 @@ screen and (max-width: 450px) {
         left: 20px;
     }
     #nav .subnav .child-subnav li a {
-        background-color: #ccc;
+        background-color: rgba(243, 244, 246, 1);
         font-weight: normal;
     }
     .carousel-item {
@@ -1837,6 +1852,8 @@ screen and (max-width: 450px) {
     .partner-logo-1 img,
     .partner-logo-2 img {
         width: 40px;
+        border: none;
+        padding: 0;
     }
     #footer {
         display: flex;

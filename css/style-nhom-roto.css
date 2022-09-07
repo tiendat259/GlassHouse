@@ -29,7 +29,6 @@ body>.navbar {
     left: 0px;
     right: 0px;
     background-color: #fff;
-    justify-content: center;
     z-index: 3;
 }
 
@@ -42,6 +41,7 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -64,6 +64,11 @@ p {
     color: rgb(0, 0, 0);
 }
 
+.logo img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
 .navbar::after {
     width: 80%;
     content: '';
@@ -78,19 +83,12 @@ p {
     transform: translateX(-50%)
 }
 
-.logo img {
-    width: 250px;
-    margin-bottom: 10px;
-}
-
-#nav {
-    padding-left: 0;
-}
-
 #nav .subnav a {
     padding: 0 12px;
+    line-height: 60px;
     font-size: 13px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 #nav>li,
@@ -116,11 +114,11 @@ p {
 }
 
 #nav li a {
-    text-transform: uppercase;
     display: block;
     color: #000;
     text-decoration: none;
-    padding: 0 15px;
+    padding: 0 24px;
+    line-height: 60px;
 }
 
 #nav>li:hover>a {
@@ -138,7 +136,6 @@ p {
     display: block;
     background-color: #fff;
     border-radius: 5px;
-    padding-left: 0;
 }
 
 #nav:hover .subnav,
@@ -176,13 +173,18 @@ p {
 #nav .subnav li:hover .child-subnav {
     display: block;
     border-radius: 5px;
-    padding-left: 0;
 }
 
 .button-cart {
     line-height: 30px;
     border-radius: 30px;
     position: relative;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .title {
@@ -462,7 +464,10 @@ input {
     padding-bottom: 15px;
 }
 
-#footer a {
+#footer a,
+#footer ul li,
+#footer i,
+.footer-title {
     color: #000;
 }
 
@@ -1479,6 +1484,7 @@ screen and (max-width: 450px) {
     #footer ul li,
     .footer-title {
         font-size: 13px;
+        color: #000;
     }
     .footer-title {
         height: 100%;
