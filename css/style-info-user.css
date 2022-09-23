@@ -1305,7 +1305,7 @@ screen and (max-width: 450px) {
     }
     #nav .subnav a {
         line-height: 0;
-        padding: 5px 50px;
+        padding: 5px 20px;
     }
     .button-cart {
         width: 130px;

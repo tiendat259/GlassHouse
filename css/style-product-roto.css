@@ -10,7 +10,7 @@ a:hover {
 }
 
 html {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 body {
@@ -195,7 +195,7 @@ a:hover {
 
 .row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -217,6 +217,7 @@ a:hover {
 
 .image-detail img {
     width: 70%;
+    margin-bottom: 20px;
 }
 
 .detail p {
@@ -372,6 +373,8 @@ a:hover {
 .image-detail {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row-2 {
@@ -1579,7 +1582,7 @@ screen and (max-width: 450px) {
     }
     #nav .subnav a {
         line-height: 0;
-        padding: 5px 70px;
+        padding: 5px 20px;
     }
     .button-cart {
         width: 130px;
@@ -1611,6 +1614,9 @@ screen and (max-width: 450px) {
     }
     .single-product input {
         width: 45%;
+    }
+    .product-detail{
+        width:80%;
     }
     #txtwidth {
         margin-right: 0;

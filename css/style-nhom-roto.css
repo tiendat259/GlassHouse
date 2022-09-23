@@ -29,6 +29,7 @@ body>.navbar {
     left: 0px;
     right: 0px;
     background-color: #fff;
+    justify-content: center;
     z-index: 3;
 }
 
@@ -41,7 +42,6 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
-    padding-left: 0;
 }
 
 nav ul li {
@@ -64,11 +64,6 @@ p {
     color: rgb(0, 0, 0);
 }
 
-.logo img {
-    width: 250px;
-    margin-bottom: 10px;
-}
-
 .navbar::after {
     width: 80%;
     content: '';
@@ -83,12 +78,16 @@ p {
     transform: translateX(-50%)
 }
 
+.logo img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
 #nav .subnav a {
     padding: 0 12px;
     line-height: 60px;
     font-size: 13px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 #nav>li,
@@ -114,11 +113,11 @@ p {
 }
 
 #nav li a {
+    text-transform: uppercase;
     display: block;
     color: #000;
     text-decoration: none;
-    padding: 0 24px;
-    line-height: 60px;
+    padding: 0 15px;
 }
 
 #nav>li:hover>a {
@@ -136,6 +135,7 @@ p {
     display: block;
     background-color: #fff;
     border-radius: 5px;
+    padding-left: 0;
 }
 
 #nav:hover .subnav,
@@ -173,6 +173,7 @@ p {
 #nav .subnav li:hover .child-subnav {
     display: block;
     border-radius: 5px;
+    padding-left: 0;
 }
 
 .button-cart {
@@ -181,11 +182,6 @@ p {
     position: relative;
 }
 
-a,
-a:hover {
-    text-decoration: none;
-    color: inherit;
-}
 
 .title {
     display: flex;
@@ -1446,7 +1442,7 @@ screen and (max-width: 450px) {
     }
     #nav .subnav a {
         line-height: 0;
-        padding: 5px 40px;
+        padding: 5px 20px;
     }
     .button-cart {
         width: 130px;

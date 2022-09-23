@@ -33,6 +33,7 @@ body>.navbar {
 }
 
 .logo img {
+    width: 250px;
     margin-bottom: 10px;
 }
 
@@ -1589,7 +1590,7 @@ screen and (max-width: 450px) {
     }
     #nav .subnav a {
         line-height: 0;
-        padding: 5px 70px;
+        padding: 5px 20px;
     }
     .button-cart {
         width: 130px;
@@ -1718,7 +1719,7 @@ screen and (max-width: 450px) {
     }
     #nav .subnav a {
         line-height: 0;
-        padding: 5px 70px;
+        padding: 5px 20px;
     }
     .button-cart {
         width: 130px;

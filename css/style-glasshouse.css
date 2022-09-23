@@ -299,7 +299,7 @@ a:hover {
 }
 
 .columns span {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .columns hr {
@@ -324,6 +324,7 @@ a:hover {
 #product .product-img img {
     height: 180px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 #product .container .row .columns:hover span {
@@ -621,25 +622,23 @@ a:hover {
 
 #partner {
     width: 80%;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 20px auto;
 }
 
 .partner-logo-1 img {
     width: 150px;
     margin: 0 auto;
-    filter: grayscale(100);
+        filter: grayscale(100);
     padding: 0 10px;
     border: 1px solid #ccc;
 }
-
+.partner-logo-1 img:hover {
+    filter: grayscale(0);
+}
 .partner-logo-1 {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-}
-
-.partner-logo-1 img:hover {
-    filter: grayscale(0);
 }
 
 .partner-logo-2 img {
@@ -649,11 +648,9 @@ a:hover {
     padding: 0 10px;
     border: 1px solid #ccc;
 }
-
 .partner-logo-2 img:hover {
     filter: grayscale(0);
 }
-
 .partner-logo-2 {
     display: flex;
     justify-content: center;
@@ -1682,7 +1679,7 @@ screen and (max-width: 450px) {
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: rgba(243, 244, 246, 1);
+        background: #ccc;
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -1726,7 +1723,7 @@ screen and (max-width: 450px) {
         left: 20px;
     }
     #nav .subnav .child-subnav li a {
-        background-color: rgba(243, 244, 246, 1);
+        background-color: #ccc;
         font-weight: normal;
     }
     .carousel-item {
